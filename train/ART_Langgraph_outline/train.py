@@ -61,9 +61,23 @@ tok = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
 
 # --- 用于裁剪Context，当长度比较长的时候
 def _msg_text(m):
-    # 兼容 dict / LangChain Message / Choice 等
-    role = getattr(m, "type", getattr(m, "role", m.get("role", ""))) if not isinstance(m, dict) else m.get("role", "")
-    content = getattr(m, "content", m.get("content", "")) if isinstance(m, dict) else getattr(m, "content", "")
+    """将各种消息对象（dict / LangChain Message / OpenAI Choice / 其它）统一成 'role: content' 文本。"""
+    # 1) dict 消息：用 dict.get
+    if isinstance(m, dict):
+        role = m.get("role", "") or m.get("type", "")
+        content = m.get("content", "") or ""
+        return f"{role or 'msg'}: {content}"
+
+    # 2) OpenAI ChatCompletion Choice（或类似对象）：有 message 且 message.content
+    #    采用鸭子类型判断，避免显式依赖 openai 的类型
+    if hasattr(m, "message") and hasattr(getattr(m, "message"), "content"):
+        role = "assistant"
+        content = getattr(getattr(m, "message"), "content", "") or ""
+        return f"{role}: {content}"
+
+    # 3) 其它（如 LangChain 的 HumanMessage/SystemMessage 等）
+    role = getattr(m, "type", None) or getattr(m, "role", "") or ""
+    content = getattr(m, "content", "") or ""
     return f"{role or 'msg'}: {content}"
 
 def _tokens_len(text: str) -> int:
