@@ -418,13 +418,13 @@ async def main():
         for i, topic in enumerate(topic_data["topics"], 1)
     ]
 
-    # 训练参数
+    # 训练参数， max_steps和num_epochs的区别
     training_config = {
         "groups_per_step": 2,
         "num_epochs": 2,
         "rollouts_per_group": 4,
         "learning_rate": 1e-5,
-        "max_steps": 5,
+        "max_steps": 50,
     }
 
     # wandb 数据概览
