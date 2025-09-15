@@ -275,7 +275,7 @@ async def rollout(model: art.Model, web_search_scenario: WebSearchScenario) -> P
         final_outline = FinalOutline(outline=outline, source_urls=source_urls)
         return final_outline.model_dump()
 
-    tools = [return_final_outline_tool]
+    tools = [search_web, return_final_outline_tool]
 
     # 用 ART 的 init_chat_model 注入可训练聊天模型
     chat_model = init_chat_model(MODEL_NAME, temperature=0.4)
