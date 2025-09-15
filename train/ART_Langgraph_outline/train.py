@@ -29,6 +29,7 @@ from tenacity import retry, stop_after_attempt
 from litellm import acompletion
 from zai import ZhipuAiClient
 from art.rewards import ruler_score_group
+from transformers import AutoTokenizer
 
 # ---------------- wandb ----------------
 import wandb
@@ -41,8 +42,10 @@ MODEL_NAME = os.getenv("ART_MODEL", "Qwen/Qwen2.5-0.5B-Instruct")
 PROJECT_NAME = os.getenv("ART_PROJECT", "web-search-outline-training")
 USE_LOCAL_BACKEND = os.getenv("ART_BACKEND", "local").lower() == "local"
 USE_RULER = os.getenv("USE_RULER", "true").lower() == "true"
+MAX_SEQ_LEN = int(os.getenv("MAX_SEQ_LEN", 4096))
 
 print(f"{NAME} - {MODEL_NAME} - {PROJECT_NAME} - {os.environ['WANDB_BASE_URL']} - 很关键的USE_RULER: {USE_RULER}")
+print(f"训练时传入的最大序列长度: {MAX_SEQ_LEN}")
 
 # RULER 评估模型（可选；需相应 API Key）
 RULER_MODEL = os.getenv("RULER_MODEL", "openai/o4-mini")
@@ -53,6 +56,48 @@ WANDB_ENTITY = os.getenv("WANDB_ENTITY")
 WANDB_RUN_NAME = os.getenv("WANDB_RUN_NAME", f"{NAME}-{time.strftime('%Y%m%d-%H%M%S')}")
 
 WebSearchClient = ZhipuAiClient(api_key=os.environ["ZHIPU_API_KEY"])
+
+tok = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
+
+# --- 用于裁剪Context，当长度比较长的时候
+def _msg_text(m):
+    # 兼容 dict / LangChain Message / Choice 等
+    role = getattr(m, "type", getattr(m, "role", m.get("role", ""))) if not isinstance(m, dict) else m.get("role", "")
+    content = getattr(m, "content", m.get("content", "")) if isinstance(m, dict) else getattr(m, "content", "")
+    return f"{role or 'msg'}: {content}"
+
+def _tokens_len(text: str) -> int:
+    return len(tok(text, add_special_tokens=False, return_attention_mask=False)["input_ids"])
+
+def clip_traj_inplace(traj, max_tokens=MAX_SEQ_LEN):
+    # 对rollout的轨迹进行裁剪，保留一定长度即可，裁剪单条轨迹
+    if not getattr(traj, "messages_and_choices", None):
+        return
+    msgs = list(traj.messages_and_choices)
+    print(f"裁剪前有信息：{len(msgs)} 条")
+    # 永远保留第一个 system（如有）
+    keep_head = []
+    if msgs and ("system" in _msg_text(msgs[0]).lower()):
+        keep_head.append(msgs.pop(0))
+
+    # 从“最近”往回累加，超出则停止
+    kept_tail = []
+    for m in reversed(msgs):
+        candidate = keep_head + list(reversed(kept_tail + [m]))
+        text = "\n".join(_msg_text(x) for x in candidate)
+        if _tokens_len(text) <= max_tokens:
+            kept_tail.append(m)
+        else:
+            break
+
+    traj.messages_and_choices = keep_head + list(reversed(kept_tail))
+
+
+# 在 finished / judged 生成之后、train 之前
+def clip_group(g, max_tokens=MAX_SEQ_LEN):
+    return art.TrajectoryGroup(
+        (clip_traj_inplace(t, max_tokens) or t) for t in list(g)
+    )
 
 # ---------- 数据结构 ----------
 class WebSearchResult(BaseModel):
@@ -427,7 +472,7 @@ async def main():
                 except Exception:
                     # RULER 失效/异常时，退回无裁判训练
                     judged.append(art.TrajectoryGroup(t_list))
-
+            judged = [clip_group(g, MAX_SEQ_LEN) for g in judged]
             await model.train(
                 trajectory_groups=judged,
                 config=art.TrainConfig(learning_rate=training_config["learning_rate"]),
@@ -435,6 +480,7 @@ async def main():
             )
             wandb.log({"train/used_judged_groups": 1}, step=batch.step)
         else:
+            finished = [clip_group(g, MAX_SEQ_LEN) for g in finished]
             await model.train(
                 trajectory_groups=finished,
                 config=art.TrainConfig(learning_rate=training_config["learning_rate"]),
