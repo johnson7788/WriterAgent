@@ -424,7 +424,7 @@ async def main():
         "num_epochs": 2,
         "rollouts_per_group": 4,
         "learning_rate": 1e-5,
-        "max_steps": 50,
+        "max_steps": os.environ["MAX_STEPS"],
     }
 
     # wandb 数据概览

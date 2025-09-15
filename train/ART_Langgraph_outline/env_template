@@ -10,7 +10,8 @@ WANDB_API_KEY=local-f2ca8cd44276ac92ca0a2c12641a6902beb6847d
 CLAUDE_API_KEY=xxxxx
 ART_NAME=outline01
 ART_MODEL=Qwen/Qwen2.5-7B-Instruct
-NUM_EPOCHS=10
+# 最大训练步数
+MAX_STEPS=60
 # 评估模型的base url,暂时没用
 JUDGE_MODEL_BASE_URL=http://127.0.0.1:6688
 JUDGE_MODEL_NAME="openai/gpt-4o-mini"
