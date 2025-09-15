@@ -8,6 +8,7 @@
 5. 测试模型训练效果: [model_test.py](model_test.py)
 
 ## 文件
+```
 ├── README.md
 ├── env_template   ##模版文件，使用哪个模型进行搜索和作为reward 模型
 ├── generate_topic.py  ## 生成训练数据，使用的是Openai的Agent框架和Json的AgentOutputSchemaBase输出
@@ -17,9 +18,10 @@
 ├── topic.json    #训练时需要的主题数据
 ├── original_model.py    #测试未经过训练的模型
 └── train.py       # 训练代码
-
+```
 
 ## 搜索输出
+```
 WebSearchClient = ZhipuAiClient(api_key="your-api-key")
 response = WebSearchClient.web_search.web_search(
         search_engine="search_std",
@@ -39,6 +41,7 @@ response = WebSearchClient.web_search.web_search(
       "publish_date": "2025-08-25"
     }
  ]
+```
 
 ## 训练
 python train.py
@@ -50,6 +53,7 @@ python model_test.py
 http://192.168.100.8:3005/johnson/web-search-agent-training
 
 ## 训练的模型结果
+```
 PROJECT_NAME = web-search-outline-training
 ART_NAME=ppt-outline05
 /workspace/verl/RLDecisionAgent/ART/.art/web-search-outline-training/models/ppt-outline05/
@@ -133,3 +137,4 @@ ART_NAME=ppt-outline05
         ├── 0001.jsonl
         ├── 0002.jsonl
         └── 0003.jsonl
+```

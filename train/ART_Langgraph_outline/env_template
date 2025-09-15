@@ -11,10 +11,12 @@ CLAUDE_API_KEY=xxxxx
 ART_NAME=outline01
 ART_MODEL=Qwen/Qwen2.5-7B-Instruct
 NUM_EPOCHS=10
-# 评估模型的base url
+# 评估模型的base url,暂时没用
 JUDGE_MODEL_BASE_URL=http://127.0.0.1:6688
 JUDGE_MODEL_NAME="openai/gpt-4o-mini"
 # 评估模型的配置
 RULTER_MODEL=openai/deepseek-chat
 RULTER_API_KEY=sk-xxxx
 RULTER_API_BASE=https://api.deepseek.com/v1
+# 是否使用ruler模型评判奖励
+USE_RULER=true
