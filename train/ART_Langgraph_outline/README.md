@@ -5,6 +5,7 @@
 2. 测试下未训练过的模型： [original_model.py](original_model.py)
 3. 生成训练样本： [generate_topic.py](generate_topic.py)
 4. 开始训练,修改.env文件： [train.py](train.py)
+    - 训练时和测试时使用的prompt.py
 5. 测试模型训练效果: [model_test.py](model_test.py)
 
 ## 文件

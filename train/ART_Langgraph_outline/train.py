@@ -41,10 +41,8 @@ MODEL_NAME = os.getenv("ART_MODEL", "Qwen/Qwen2.5-0.5B-Instruct")
 PROJECT_NAME = os.getenv("ART_PROJECT", "web-search-outline-training")
 USE_LOCAL_BACKEND = os.getenv("ART_BACKEND", "local").lower() == "local"
 USE_RULER = os.getenv("USE_RULER", "true").lower() == "true"
-MAX_SEQ_LEN = int(os.getenv("MAX_SEQ_LEN", 4096))
 
 print(f"{NAME} - {MODEL_NAME} - {PROJECT_NAME} - {os.environ['WANDB_BASE_URL']} - 很关键的USE_RULER: {USE_RULER}")
-print(f"训练时传入的最大序列长度: {MAX_SEQ_LEN}")
 
 # RULER 评估模型（可选；需相应 API Key）
 RULER_MODEL = os.getenv("RULER_MODEL", "openai/o4-mini")
@@ -432,7 +430,7 @@ async def main():
 
             await model.train(
                 trajectory_groups=judged,
-                config=art.TrainConfig(learning_rate=training_config["learning_rate"], max_seq_len=MAX_SEQ_LEN),
+                config=art.TrainConfig(learning_rate=training_config["learning_rate"]),
                 _config={"logprob_calculation_chunk_size": 8},
             )
             wandb.log({"train/used_judged_groups": 1}, step=batch.step)
