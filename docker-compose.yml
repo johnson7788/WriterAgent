@@ -1,0 +1,46 @@
+services:
+  main_api:
+    container_name: writer_main_api
+    build:
+      context: ./backend/main_api
+      dockerfile: Dockerfile
+    ports:
+      - "7800:7800"
+    network_mode: bridge
+    restart: unless-stopped
+  main_outline:
+    container_name: main_outline_api
+    build:
+      context: ./backend/main_outline
+      dockerfile: Dockerfile
+    ports:
+      - "10050:10050"
+    network_mode: bridge
+    restart: unless-stopped
+  main_content:
+    container_name: main_content_api
+    build:
+      context: ./backend/main_content
+      dockerfile: Dockerfile
+    ports:
+      - "10051:10051"
+    network_mode: bridge
+    restart: unless-stopped
+  search_api:
+    container_name: search_api
+    build:
+      context: ./backend/search_api
+      dockerfile: Dockerfile
+    ports:
+      - "10052:10052"
+    network_mode: bridge
+    restart: unless-stopped
+
+  frontend:
+    container_name: agent_writer_frontend
+    build:
+      context: ./frontend_nextjs
+      dockerfile: Dockerfile
+    network_mode: bridge
+    ports:
+      - "3000:3000"

@@ -1,0 +1,20 @@
+OPENAI_API_KEY=xxxx
+DEEPSEEK_API_KEY=sk-xxxx
+DOUBAO_API_KEY=xxxx
+ALI_API_KEY=sk-xxxx
+GOOGLE_API_KEY=xxxx
+ZHIPU_API_KEY=xxx
+BACKUP_BUCKET=123
+WANDB_BASE_URL=http://192.168.100.8:3005
+WANDB_API_KEY=local-f2ca8cd44276ac92ca0a2c12641a6902beb6847d
+CLAUDE_API_KEY=xxxxx
+ART_NAME=outline01
+ART_MODEL=Qwen/Qwen2.5-7B-Instruct
+NUM_EPOCHS=10
+# 评估模型的base url
+JUDGE_MODEL_BASE_URL=http://127.0.0.1:6688
+JUDGE_MODEL_NAME="openai/gpt-4o-mini"
+# 评估模型的配置
+RULTER_MODEL=openai/deepseek-chat
+RULTER_API_KEY=sk-xxxx
+RULTER_API_BASE=https://api.deepseek.com/v1

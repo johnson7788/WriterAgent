@@ -1,0 +1,5 @@
+python-dotenv
+wandb
+unsloth
+vllm
+transformers==4.55.4

@@ -1,0 +1,12 @@
+# Application Settings
+DEBUG=True
+APP_ENV=development
+
+# docker build args
+NEXT_PUBLIC_API_URL="http://localhost:7800/api"
+
+AGENT_RECURSION_LIMIT=30
+
+# CORS settings
+# Example: ALLOWED_ORIGINS=http://localhost:3000,http://example.com
+ALLOWED_ORIGINS=*

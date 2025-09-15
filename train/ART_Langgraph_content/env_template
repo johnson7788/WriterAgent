@@ -1,0 +1,11 @@
+# reward评估
+OPENAI_API_KEY=xxxx
+# 搜索的key
+ZHIPU_API_KEY=xxxx
+# WANDB服务器
+WANDB_BASE_URL=http://192.168.100.8:3005
+#WANDB_API_KEY=local-f2ca8cd44276ac92ca0a2c12641a6902beb6847d
+ART_NAME=web-search05
+ART_MODEL=Qwen/Qwen2.5-0.5B-Instruct
+MINI_DATA=false
+NUM_EPOCHS=10
