@@ -257,18 +257,28 @@ class ControllerAgent(BaseAgent):
                     print(f"注意：最后一块内容已经撰写完成，但是参考引用为空，请检查搜索引擎是否正常。")
                 yield Event(author=self.name, actions=EventActions(escalate=True))
             else:
-                print(f"第 {idx} 块校验通过，进入第 {idx+1} 块，无需发送最后的参考引用。")
+                print(f"第 {idx} 块校验通过，进入第 {idx+1} 块。")
+
         else:
             # ✅ 未通过但还可重试：根据 Checker 已经写好的 retry_map 判断
             count = int(retry_map.get(idx, 0))
             if count > max_retries:
                 warn = f"第 {idx} 块重试超过 {max_retries} 次，将保留最近草稿（可能仍不完全合规）。"
+                last_draft = ctx.session.state.get("last_draft", "")
                 sections = ctx.session.state.get("existing_sections", [])
-                sections.append(ctx.session.state.get("last_draft", ""))
+                sections.append(last_draft)
                 ctx.session.state["existing_sections"] = sections
                 ctx.session.state["existing_text"] = "\n".join(sections)
                 ctx.session.state["current_part_index"] = idx + 1
+                ctx.session.state["checker_result"] = True
                 ctx.session.state.pop("rewrite_hint", None)
+
+                if last_draft:
+                    # 在放弃继续重写时依然把最新草稿返回给上游，避免章节缺失
+                    yield Event(
+                        author="WriterCheckerAgent",
+                        content=types.Content(parts=[types.Part(text=last_draft)])
+                    )
 
                 if idx + 1 == parts_plan_num:
                     references = ctx.session.state.get("references", {})
