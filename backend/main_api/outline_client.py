@@ -101,7 +101,7 @@ class A2AOutlineClientWrapper:
                 if "error" in chunk_data:
                     self.logger.error(f"错误信息: {chunk_data['error']}")
                     print(f"错误信息: {chunk_data['error']}")
-                    yield {"type": "final", "text": chunk_data['error']}
+                    yield {"type": "final", "text": chunk_data['error'], "author": "system"}
                     break
                 result = chunk_data["result"]
                 # 判断 chunk 类型
@@ -153,7 +153,7 @@ class A2AOutlineClientWrapper:
                 else:
                     self.logger.warning(f"未识别的chunk类型: {result.get('kind')}")
             print(f"Agent正常处理完成，对话结束。")
-            yield {"type": "final", "text": "对话结束"}
+            yield {"type": "final", "text": "对话结束", "author": "system"}
 
 if __name__ == '__main__':
     async def main():
