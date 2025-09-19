@@ -1,4 +1,5 @@
 import json
+import os
 import time
 import logging
 from typing import Dict, List, Any, AsyncGenerator, Optional, Union
@@ -18,15 +19,12 @@ from . import prompt
 logger = logging.getLogger(__name__)
 
 def my_before_model_callback(callback_context: CallbackContext, llm_request: LlmRequest) -> Optional[LlmResponse]:
-    # 1. 检查用户输入
     agent_name = callback_context.agent_name
     history_length = len(llm_request.contents)
     metadata = callback_context.state.get("metadata")
     print(f"调用了{agent_name}模型前的callback, 现在Agent共有{history_length}条历史记录,metadata数据为：{metadata}")
-    logger.info(f"调用了{agent_name}模型前的callback, 现在Agent共有{history_length}条历史记录,metadata数据为：{metadata}")
-    #清空contents,不需要上一步的拆分topic的记录, 不能在这里清理，否则，每次调用工具都会清除记忆，白操作了
-    # llm_request.contents.clear()
-    # 返回 None，继续调用 LLM
+    logger.info(f"=====>>>1. 调用了{agent_name}.my_before_model_callback, 现在Agent共有{history_length}条历史记录,metadata数据为：{metadata}\n历史会话为：{llm_request.contents}")
+
     return None
 
 def my_after_model_callback(callback_context: CallbackContext, llm_response: LlmResponse) -> Optional[LlmResponse]:
@@ -42,10 +40,8 @@ def my_after_model_callback(callback_context: CallbackContext, llm_response: Llm
     metadata = callback_context.state.get("metadata")
     callback_context.state["last_draft"] = part_text_content
     print(f"调用了{agent_name}模型后的callback, 这次模型回复{response_parts}条信息,metadata数据为：{metadata},回复内容是: {part_text_content}")
-    logger.info(f"调用了{agent_name}模型后的callback, 这次模型回复{response_parts}条信息,metadata数据为：{metadata},回复内容是: {part_text_content}")
-    #清空contents,不需要上一步的拆分topic的记录, 不能在这里清理，否则，每次调用工具都会清除记忆，白操作了
-    # llm_request.contents.clear()
-    # 返回 None，继续调用 LLM
+    logger.info(f"=====>>>2. 调用了{agent_name}.my_after_model_callback,metadata数据为：{metadata},回复内容是: {part_text_content}")
+
     return None
 
 # --- 1. Custom Callback Functions for PPTWriterSubAgent ---
@@ -53,8 +49,11 @@ def my_writer_before_agent_callback(callback_context: CallbackContext) -> None:
     """
     在调用LLM之前，从会话状态中获取当前计划，并格式化LLM输入。
     """
+    agent_name = callback_context.agent_name
     current_part_index: int = callback_context.state.get("current_part_index", 0)  # Default to 0
     parts_plan_num = callback_context.state.get("parts_plan_num")
+    metadata = callback_context.state.get("metadata")
+    logger.info(f"=====>>>3. 调用了{agent_name}.my_writer_before_agent_callback, metadata数据为：{metadata}，当前块索引：{current_part_index}，总分块索引：{parts_plan_num}")
     # 返回 None，继续调用 LLM
     return None
 
@@ -63,6 +62,7 @@ def my_after_agent_callback(callback_context: CallbackContext) -> None:
     """
     在LLM生成内容后，将其存储到会话状态中。供下一页ppt生成使用
     """
+    agent_name = callback_context.agent_name
     model_last_output_content = callback_context._invocation_context.session.events[-1]
     response_parts = model_last_output_content.content.parts
     part_texts = []
@@ -71,14 +71,9 @@ def my_after_agent_callback(callback_context: CallbackContext) -> None:
         if part_text is not None:
             part_texts.append(part_text)
     part_text_content = "\n".join(part_texts)
-    # 获取或初始化存储所有生成内容的列表
-    existing_sections: List[str] = callback_context.state.get("existing_sections", [])
-    existing_sections.append(part_text_content)
-
-    # 更新会话状态
-    callback_context.state["existing_sections"] = existing_sections
-    callback_context.state["existing_text"] = "\n".join(existing_sections)
-    print(f"--- Stored content for {callback_context.state.get('current_part_index', 0) + 1} ---")
+    metadata = callback_context.state.get("metadata")
+    logger.info(f"=====>>>4. 调用了{agent_name}.my_after_agent_callback,metadata数据为：{metadata},回复内容是: {part_text_content}")
+    return None
 
 class WriterSubAgent(LlmAgent):
     def __init__(self, **kwargs):
@@ -101,7 +96,7 @@ class WriterSubAgent(LlmAgent):
         rewrite_retry_count_map = ctx.session.state.get("rewrite_retry_count_map", {})
         # 清空历史记录，防止历史记录进行干扰
         if int(rewrite_retry_count_map.get(current_part_index, 0)) > 0:
-            print(f"当前正在进行对: {current_part_index}个块重新生成，不需要清空历史记录")
+            logger.info(f"=====>>>6. 当前正在进行对: 第{current_part_index}个块重新生成，不需要清空历史记录")
             rewrite_hint = ctx.session.state.get("rewrite_hint")
             feedback_text = (
                 "【重写提示】以下为上轮审查反馈（rewrite_hint）。\n"
@@ -114,11 +109,11 @@ class WriterSubAgent(LlmAgent):
                     content=types.Content(parts=[types.Part(text=feedback_text)])
                 )
             )
-            print(f"为第{current_part_index}块追加重写反馈事件，rewrite_retry_count_map={rewrite_retry_count_map}")
+            logger.info(f"=====>>>6. 为第{current_part_index}块追加重写反馈事件，rewrite_retry_count_map={rewrite_retry_count_map}")
         else:
-            print(f"当前计划块数{parts_plan_num}, 正在生成第{current_part_index}块内容，清空历史记录")
+            logger.info(f"=====>>>6. 当前计划块数{parts_plan_num}, 正在生成第{current_part_index}块内容，清空历史记录")
             ctx.session.events = []
-        print(f"总的计划块数{parts_plan_num}, 正在生成第{current_part_index}块内容...")
+        logger.info(f"=====>>>7. 总的计划块数{parts_plan_num}, 正在生成第{current_part_index}块内容...")
         # 调用父类逻辑（最终结果）
         current_part_index: int = ctx.session.state.get("current_part_index", 0)
         if current_part_index == 0:
@@ -129,7 +124,7 @@ class WriterSubAgent(LlmAgent):
         ctx.session.state["last_struct"] = last_struct
         async for event in super()._run_async_impl(ctx):
             print(f"{self.name} 收到事件：{event}")
-            logger.info(f"{self.name} 收到事件：{event}")
+            logger.info(f"=====>>>5. {self.name} 收到事件：{event}")
             # 不返回结果给前端，等待审核通过后返回
             yield event
 
@@ -171,26 +166,23 @@ class CheckerAgent(LlmAgent):
         last_struct = ctx.session.state.get("last_struct")
         rewrite_retry_count_map: Dict[int, int] = ctx.session.state.get("rewrite_retry_count_map", {})
         if current_part_index == 0:
-            print(f"不检查摘要，直接返回给前端")
+            logger.info(f"=====>>>8. 不检查摘要，直接返回给前端")
+            ctx.session.state["checker_result"] = True
             yield Event(author=self.name, content=types.Content(parts=[types.Part(text=last_draft)]))
-            ctx.session.state["current_part_index"] += 1
+            # ctx.session.state["current_part_index"] += 1
             return
         async for event in super()._run_async_impl(ctx):
-            print(f"{self.name} 检查结果事件：{event}")
+            logger.info(f"=====>>>9. {self.name} 检查结果事件：{event}")
             result = event.content.parts[0].text.strip()
 
             if "不合格" in result:
                 retry_count = rewrite_retry_count_map.get(current_part_index, 0)
                 if retry_count < 3:
-                    ctx.session.state["rewrite_reason"] = result
-                    print(f"[CheckerAgent] 第 {retry_count + 1} 次尝试重写 slide {current_part_index + 1}")
-                    ctx.session.state["current_part_index"] = current_part_index
-                    rewrite_retry_count_map[current_part_index] = retry_count + 1
-                    ctx.session.state["rewrite_retry_count_map"] = rewrite_retry_count_map
+                    logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count + 1} 次尝试重写 分块 {current_part_index}")
                     ctx.session.state["checker_result"] = False
                     ctx.session.state["rewrite_hint"] = result
                 else:
-                    print(f"[CheckerAgent] 第 {retry_count} 次重写失败，已达最大次数，使用最后一次的draft的数据")
+                    logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count} 次重写失败，已达最大次数，使用最后一次的draft的数据")
                     ctx.session.state["rewrite_hint"] = result
                     ctx.session.state["checker_result"] = True
                     yield Event(author=self.name, content=types.Content(parts=[types.Part(text=last_draft)]))
@@ -210,7 +202,7 @@ def checker_after_model_callback(callback_context: CallbackContext, llm_response
     callback_context.state["check_total_time"] = total_time
     current_part_index = callback_context.state.get("current_part_index", 0)
     agent_name = callback_context.agent_name
-    logger.warning(f"调用了{agent_name}模型后的callback, 第{current_part_index + 1}块检查完毕, 耗时: {cost_time} 秒, 总耗时: {total_time} 秒")
+    logger.warning(f"=====>>>11. 调用了{agent_name}.checker_after_model_callback, 第{current_part_index}块检查完毕, 耗时: {cost_time} 秒, 总耗时: {total_time} 秒")
     return None
 
 writer_checker_agent = CheckerAgent(
@@ -232,7 +224,7 @@ class ControllerAgent(BaseAgent):
         )
 
     async def _run_async_impl(self, ctx: InvocationContext):
-        max_retries = 1
+        max_retries = 3
         parts_plan_num: int = ctx.session.state.get("parts_plan_num")
         idx: int = ctx.session.state.get("current_part_index", 0)
         checker_result = ctx.session.state.get("checker_result")
@@ -246,51 +238,46 @@ class ControllerAgent(BaseAgent):
             ctx.session.state["existing_text"] = "\n".join(sections)
             ctx.session.state.pop("rewrite_hint", None)
             ctx.session.state["current_part_index"] = idx + 1
-
+            test_sections1 = ctx.session.state.get("existing_sections", [])
+            logger.info(f"====================================>>>当块通过时，检查此时sections的内容：{test_sections1}")
             if idx + 1 == parts_plan_num:
                 references = ctx.session.state.get("references", {})
                 refs_text = stringify_references(references=references)
                 if refs_text:
-                    print(f"最后一条消息结束，有参考资料，即将发送给请求端：{refs_text}")
+                    logger.info(f"=====>>>12. 最后一条消息结束，有参考资料，即将发送给请求端：{refs_text}")
                     yield Event(author=self.name, content=types.Content(parts=[types.Part(text=refs_text)]))
                 else:
-                    print(f"注意：最后一块内容已经撰写完成，但是参考引用为空，请检查搜索引擎是否正常。")
+                    logger.info(f"=====>>>12. 注意：最后一块内容已经撰写完成，但是参考引用为空，请检查搜索引擎是否正常。")
                 yield Event(author=self.name, actions=EventActions(escalate=True))
             else:
-                print(f"第 {idx} 块校验通过，进入第 {idx+1} 块。")
+                logger.info(f"=====>>>13. 第 {idx} 块校验通过，进入第 {idx+1} 块。")
 
         else:
             # ✅ 未通过但还可重试：根据 Checker 已经写好的 retry_map 判断
             count = int(retry_map.get(idx, 0))
-            if count > max_retries:
+            if count >= max_retries:
                 warn = f"第 {idx} 块重试超过 {max_retries} 次，将保留最近草稿（可能仍不完全合规）。"
-                last_draft = ctx.session.state.get("last_draft", "")
                 sections = ctx.session.state.get("existing_sections", [])
-                sections.append(last_draft)
+                sections.append(ctx.session.state.get("last_draft", ""))
                 ctx.session.state["existing_sections"] = sections
                 ctx.session.state["existing_text"] = "\n".join(sections)
                 ctx.session.state["current_part_index"] = idx + 1
-                ctx.session.state["checker_result"] = True
                 ctx.session.state.pop("rewrite_hint", None)
-
-                if last_draft:
-                    # 在放弃继续重写时依然把最新草稿返回给上游，避免章节缺失
-                    yield Event(
-                        author="WriterCheckerAgent",
-                        content=types.Content(parts=[types.Part(text=last_draft)])
-                    )
-
+                test_sections = ctx.session.state.get("existing_sections", [])
+                logger.info(f"====================================>>>当块达到最大尝试次数时，检查此时sections的内容：{test_sections}")
                 if idx + 1 == parts_plan_num:
                     references = ctx.session.state.get("references", {})
                     refs_text = stringify_references(references=references)
                     if refs_text:
                         yield Event(author=self.name, content=types.Content(parts=[types.Part(text=refs_text)]))
-                    print(f"warning: {warn}")
+                    logger.info(f"=====>>>12. warning: {warn}")
                     yield Event(author=self.name, actions=EventActions(escalate=True))
                 else:
-                    print(f"warning: {warn}")
+                    logger.info(f"=====>>>12. warning: {warn}")
             else:
-                print(f"第 {idx} 块未通过，将触发重写（第 {count} 次重试）。")
+                retry_map[idx] = count + 1
+                ctx.session.state["rewrite_retry_count_map"] = retry_map
+                logger.info(f"=====>>>13. 第 {idx} 块未通过，将触发重写（第 {count + 1} 次重试）。")
 
 def my_super_before_agent_callback(callback_context: CallbackContext):
     """
