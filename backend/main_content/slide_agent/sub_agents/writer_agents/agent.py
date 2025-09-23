@@ -15,6 +15,7 @@ from .utils import stringify_references
 from ...config import CONTENT_WRITER_AGENT_CONFIG, CHECKER_AGENT_CONFIG
 from ...create_model import create_model
 from . import prompt
+from . import index_filter
 
 logger = logging.getLogger(__name__)
 
@@ -126,23 +127,32 @@ class WriterSubAgent(LlmAgent):
             print(f"{self.name} 收到事件：{event}")
             logger.info(f"=====>>>5. {self.name} 收到事件：{event}")
             # 不返回结果给前端，等待审核通过后返回
+            if int(rewrite_retry_count_map.get(current_part_index, 0)) > 0:
+                del_history = ctx.session.events.pop()
+                logger.info(f"=============>>>删除了最后1个内容块：\n{del_history}")
+                del_history = ctx.session.events.pop()
+                logger.info(f"=============>>>删除了倒数第2个内容块：\n{del_history}")
+                logger.info(f"=============>>>删除后的历史记录为：\n{ctx.session.events}")
             yield event
 
     def _get_dynamic_instruction(self, ctx: InvocationContext) -> str:
         current_part_index: int = ctx.state.get("current_part_index", 0)
-        current_part_index: int = ctx.state.get("current_part_index", 0)
         rewrite_retry_count_map = ctx.state.get("rewrite_retry_count_map", {})
         retry_num = int(rewrite_retry_count_map.get(current_part_index, 0))
+        
+        # 获取language参数
+        language = ctx.state.get("language")
+        
         if retry_num > 0:
             print(f"当前正在进行对: {current_part_index}个块重新生成，生成后返回给前端")
-            prompt_instruction = prompt.FIX_ERROR_PROMPT
+            prompt_instruction = fix_error_get_dynamic_instruction(ctx)
         elif current_part_index == 0:
             current_type = "abstract"
             abstract_outline = ctx.state["abstract"]
             print(f"准备生成第一部分，摘要内容:{abstract_outline}")
             part_prompt = prompt.prompt_mapper[current_type]
             title = ctx.state["title"]
-            prompt_instruction = prompt.PREFIX_PROMPT.format(TITLE=title) + part_prompt.format(ABSTRACT_STRUCT=abstract_outline, TITLE=title)
+            prompt_instruction = prompt.PREFIX_PROMPT.format(TITLE=title, language=language) + part_prompt.format(ABSTRACT_STRUCT=abstract_outline, TITLE=title,language=language)
         else:
             current_type = "body"
             sections = ctx.state["sections"]
@@ -154,9 +164,45 @@ class WriterSubAgent(LlmAgent):
             part_prompt = prompt.prompt_mapper[current_type]
             title = ctx.state["title"]
             existing_text = ctx.state["existing_text"]
-            prompt_instruction = prompt.PREFIX_PROMPT.format(TITLE=title) + part_prompt.format(SECTION_STRUCT=section_outline)
+            prompt_instruction = prompt.PREFIX_PROMPT.format(TITLE=title, language=language) + part_prompt.format(SECTION_STRUCT=section_outline,language=language)
         print(f"第{current_part_index}块的prompt是：{prompt_instruction}")
         return prompt_instruction
+
+
+def checker_get_dynamic_instruction(ctx: InvocationContext) -> str:
+    """
+    为CheckerAgent生成动态指令，支持语言参数
+    """
+    # 从上下文状态中获取语言参数
+    language = ctx.state.get("language")
+    
+    # 获取其他必要的参数
+    title = ctx.state.get("title", "未知标题")
+    last_struct = ctx.state.get("last_struct", "{}")
+    last_draft = ctx.state.get("last_draft", "")
+    
+    # 使用所有参数格式化CHECKER_AGENT_PROMPT
+    prompt_instruction = prompt.CHECKER_AGENT_PROMPT.format(
+        language=language,
+        title=title,
+        last_struct=last_struct,
+        last_draft=last_draft
+    )
+    
+    return prompt_instruction
+
+
+def fix_error_get_dynamic_instruction(ctx: InvocationContext) -> str:
+    """
+    为格式修正生成动态指令，支持语言参数
+    """
+    # 从上下文状态中获取语言参数，默认为中文
+    language = ctx.state.get("language")
+    
+    # 使用语言参数格式化FIX_ERROR_PROMPT
+    prompt_instruction = prompt.FIX_ERROR_PROMPT.format(language=language)
+    
+    return prompt_instruction
 
 
 class CheckerAgent(LlmAgent):
@@ -165,17 +211,17 @@ class CheckerAgent(LlmAgent):
         last_draft = ctx.session.state.get("last_draft")
         last_struct = ctx.session.state.get("last_struct")
         rewrite_retry_count_map: Dict[int, int] = ctx.session.state.get("rewrite_retry_count_map", {})
+        idx_mapping = ctx.session.state.get("idx_mapping", {})
         if current_part_index == 0:
             logger.info(f"=====>>>8. 不检查摘要，直接返回给前端")
             ctx.session.state["checker_result"] = True
             yield Event(author=self.name, content=types.Content(parts=[types.Part(text=last_draft)]))
-            # ctx.session.state["current_part_index"] += 1
             return
         async for event in super()._run_async_impl(ctx):
             logger.info(f"=====>>>9. {self.name} 检查结果事件：{event}")
             result = event.content.parts[0].text.strip()
 
-            if "不合格" in result:
+            if "不合格" in result or "fail" in result.lower():
                 retry_count = rewrite_retry_count_map.get(current_part_index, 0)
                 if retry_count < 3:
                     logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count + 1} 次尝试重写 分块 {current_part_index}")
@@ -185,11 +231,15 @@ class CheckerAgent(LlmAgent):
                     logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count} 次重写失败，已达最大次数，使用最后一次的draft的数据")
                     ctx.session.state["rewrite_hint"] = result
                     ctx.session.state["checker_result"] = True
-                    yield Event(author=self.name, content=types.Content(parts=[types.Part(text=last_draft)]))
+                    filter_text, new_mapping= index_filter.process_paragraphs_and_build_mapping(paragraphs=last_draft, prev_mapping=idx_mapping)
+                    ctx.session.state["idx_mapping"] = new_mapping
+                    yield Event(author=self.name, content=types.Content(parts=[types.Part(text=filter_text)]))
             else:
                 # 审核通过了，那么返回WriterSubAgent的回答给前端
                 ctx.session.state["checker_result"] = True
-                yield Event(author=self.name, content=types.Content(parts=[types.Part(text=last_draft)]))
+                filter_text, new_mapping= index_filter.process_paragraphs_and_build_mapping(paragraphs=last_draft, prev_mapping=idx_mapping)
+                ctx.session.state["idx_mapping"] = new_mapping
+                yield Event(author=self.name, content=types.Content(parts=[types.Part(text=filter_text)]))
 
 def checker_before_model_callback(callback_context: CallbackContext, llm_request: LlmRequest):
     start_time = time.time()
@@ -209,7 +259,7 @@ writer_checker_agent = CheckerAgent(
     model=create_model(model=CHECKER_AGENT_CONFIG["model"], provider=CHECKER_AGENT_CONFIG["provider"]),
     name="WriterCheckerAgent",
     description="检查撰写综述章节的内容是否合格",
-    instruction=prompt.CHECKER_AGENT_PROMPT,
+    instruction=checker_get_dynamic_instruction,
     before_model_callback=checker_before_model_callback,
     after_model_callback=checker_after_model_callback,
 )
@@ -229,6 +279,7 @@ class ControllerAgent(BaseAgent):
         idx: int = ctx.session.state.get("current_part_index", 0)
         checker_result = ctx.session.state.get("checker_result")
         retry_map = ctx.session.state.get("rewrite_retry_count_map", {})
+        idx_mapping = ctx.session.state.get("idx_mapping", {})
 
         if checker_result is True:
             # ✅ 通过：提交并推进
@@ -244,8 +295,9 @@ class ControllerAgent(BaseAgent):
                 references = ctx.session.state.get("references", {})
                 refs_text = stringify_references(references=references)
                 if refs_text:
-                    logger.info(f"=====>>>12. 最后一条消息结束，有参考资料，即将发送给请求端：{refs_text}")
-                    yield Event(author=self.name, content=types.Content(parts=[types.Part(text=refs_text)]))
+                    final_bib, missing = index_filter.finalize_bibliography(bib_text=refs_text, final_mapping=idx_mapping)
+                    logger.info(f"=====>>>12. 最后一条消息结束，有参考资料，即将发送给请求端：{final_bib}")
+                    yield Event(author=self.name, content=types.Content(parts=[types.Part(text=final_bib)]))
                 else:
                     logger.info(f"=====>>>12. 注意：最后一块内容已经撰写完成，但是参考引用为空，请检查搜索引擎是否正常。")
                 yield Event(author=self.name, actions=EventActions(escalate=True))
@@ -269,7 +321,8 @@ class ControllerAgent(BaseAgent):
                     references = ctx.session.state.get("references", {})
                     refs_text = stringify_references(references=references)
                     if refs_text:
-                        yield Event(author=self.name, content=types.Content(parts=[types.Part(text=refs_text)]))
+                        final_bib, missing = index_filter.finalize_bibliography(bib_text=refs_text, final_mapping=idx_mapping)
+                        yield Event(author=self.name, content=types.Content(parts=[types.Part(text=final_bib)]))
                     logger.info(f"=====>>>12. warning: {warn}")
                     yield Event(author=self.name, actions=EventActions(escalate=True))
                 else:
@@ -286,6 +339,7 @@ def my_super_before_agent_callback(callback_context: CallbackContext):
     :return:
     """
     callback_context.state["existing_text"] = ""  #已经生成的内容
+    callback_context.state["idx_mapping"] = {}  #新旧索引映射
     # 初始化重试次数记录
     if "rewrite_retry_count_map" not in callback_context.state:
         callback_context.state["rewrite_retry_count_map"] = {}
@@ -297,6 +351,8 @@ def my_super_before_agent_callback(callback_context: CallbackContext):
         callback_context.state["last_struct"] = ""
     if "current_part_index" not in callback_context.state:
         callback_context.state["current_part_index"] = 0
+    if "idx_mapping" not in callback_context.state:
+        callback_context.state["idx_mapping"] = {}
     return None
 
 # --- 4. WriterGeneratorLoopAgent ---
