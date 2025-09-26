@@ -33,6 +33,7 @@ def create_model(model:str, provider: str):
         return LiteLlm(
             model=model,  # 例如: "claude/claude-3-opus-20240229"
             api_key=os.environ.get("CLAUDE_API_KEY"),
+            num_tries=3,  # 重试的次数
         )
     elif provider == "openai":
         # openai的模型需要使用LiteLlm
