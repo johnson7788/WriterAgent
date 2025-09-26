@@ -97,20 +97,10 @@ class WriterSubAgent(LlmAgent):
         rewrite_retry_count_map = ctx.session.state.get("rewrite_retry_count_map", {})
         # 清空历史记录，防止历史记录进行干扰
         if int(rewrite_retry_count_map.get(current_part_index, 0)) > 0:
-            logger.info(f"=====>>>6. 当前正在进行对: 第{current_part_index}个块重新生成，不需要清空历史记录")
-            rewrite_hint = ctx.session.state.get("rewrite_hint")
-            feedback_text = (
-                "【重写提示】以下为上轮审查反馈（rewrite_hint）。\n"
-                "请严格依据此反馈对本块进行**完整重写**：修正指出的问题，避免复用不合格表述；必要时可调整结构与例证。\n\n"
-                f"{rewrite_hint}"
-            )
-            ctx.session.events.append(
-                Event(
-                    author="CheckerFeedback",
-                    content=types.Content(parts=[types.Part(text=feedback_text)])
-                )
-            )
-            logger.info(f"=====>>>6. 为第{current_part_index}块追加重写反馈事件，rewrite_retry_count_map={rewrite_retry_count_map}")
+            logger.info(f"=====>>>6. 当前正在进行对: 第{current_part_index}个块重新生成")
+            del_history = ctx.session.events.pop()
+            logger.info(f"=============>>>删除了最后1个内容块：\n{del_history}")
+            logger.info(f"=============>>>删除后的历史记录为：\n{ctx.session.events}")
         else:
             logger.info(f"=====>>>6. 当前计划块数{parts_plan_num}, 正在生成第{current_part_index}块内容，清空历史记录")
             ctx.session.events = []
@@ -127,26 +117,15 @@ class WriterSubAgent(LlmAgent):
             print(f"{self.name} 收到事件：{event}")
             logger.info(f"=====>>>5. {self.name} 收到事件：{event}")
             # 不返回结果给前端，等待审核通过后返回
-            if int(rewrite_retry_count_map.get(current_part_index, 0)) > 0:
-                del_history = ctx.session.events.pop()
-                logger.info(f"=============>>>删除了最后1个内容块：\n{del_history}")
-                del_history = ctx.session.events.pop()
-                logger.info(f"=============>>>删除了倒数第2个内容块：\n{del_history}")
-                logger.info(f"=============>>>删除后的历史记录为：\n{ctx.session.events}")
             yield event
 
     def _get_dynamic_instruction(self, ctx: InvocationContext) -> str:
         current_part_index: int = ctx.state.get("current_part_index", 0)
-        rewrite_retry_count_map = ctx.state.get("rewrite_retry_count_map", {})
-        retry_num = int(rewrite_retry_count_map.get(current_part_index, 0))
         
         # 获取language参数
         language = ctx.state.get("language")
         
-        if retry_num > 0:
-            print(f"当前正在进行对: {current_part_index}个块重新生成，生成后返回给前端")
-            prompt_instruction = fix_error_get_dynamic_instruction(ctx)
-        elif current_part_index == 0:
+        if current_part_index == 0:
             current_type = "abstract"
             abstract_outline = ctx.state["abstract"]
             print(f"准备生成第一部分，摘要内容:{abstract_outline}")
@@ -192,18 +171,6 @@ def checker_get_dynamic_instruction(ctx: InvocationContext) -> str:
     return prompt_instruction
 
 
-def fix_error_get_dynamic_instruction(ctx: InvocationContext) -> str:
-    """
-    为格式修正生成动态指令，支持语言参数
-    """
-    # 从上下文状态中获取语言参数，默认为中文
-    language = ctx.state.get("language")
-    
-    # 使用语言参数格式化FIX_ERROR_PROMPT
-    prompt_instruction = prompt.FIX_ERROR_PROMPT.format(language=language)
-    
-    return prompt_instruction
-
 
 class CheckerAgent(LlmAgent):
     async def _run_async_impl(self, ctx: InvocationContext) -> AsyncGenerator[Event, None]:
@@ -226,10 +193,8 @@ class CheckerAgent(LlmAgent):
                 if retry_count < 3:
                     logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count + 1} 次尝试重写 分块 {current_part_index}")
                     ctx.session.state["checker_result"] = False
-                    ctx.session.state["rewrite_hint"] = result
                 else:
                     logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count} 次重写失败，已达最大次数，使用最后一次的draft的数据")
-                    ctx.session.state["rewrite_hint"] = result
                     ctx.session.state["checker_result"] = True
                     filter_text, new_mapping= index_filter.process_paragraphs_and_build_mapping(paragraphs=last_draft, prev_mapping=idx_mapping)
                     ctx.session.state["idx_mapping"] = new_mapping
@@ -287,7 +252,6 @@ class ControllerAgent(BaseAgent):
             sections.append(ctx.session.state.get("last_draft", ""))
             ctx.session.state["existing_sections"] = sections
             ctx.session.state["existing_text"] = "\n".join(sections)
-            ctx.session.state.pop("rewrite_hint", None)
             ctx.session.state["current_part_index"] = idx + 1
             test_sections1 = ctx.session.state.get("existing_sections", [])
             logger.info(f"====================================>>>当块通过时，检查此时sections的内容：{test_sections1}")
@@ -314,7 +278,6 @@ class ControllerAgent(BaseAgent):
                 ctx.session.state["existing_sections"] = sections
                 ctx.session.state["existing_text"] = "\n".join(sections)
                 ctx.session.state["current_part_index"] = idx + 1
-                ctx.session.state.pop("rewrite_hint", None)
                 test_sections = ctx.session.state.get("existing_sections", [])
                 logger.info(f"====================================>>>当块达到最大尝试次数时，检查此时sections的内容：{test_sections}")
                 if idx + 1 == parts_plan_num:
@@ -338,6 +301,13 @@ def my_super_before_agent_callback(callback_context: CallbackContext):
     :param callback_context:
     :return:
     """
+    title = callback_context.state.get("title","")
+    sections = callback_context.state.get("sections","")
+    abstract = callback_context.state.get("abstract","")
+    logger.info(f"=================>>>提取到的标题为：{title}")
+    logger.info(f"=================>>>提取到的章节为：{sections}")
+    logger.info(f"=================>>>提取到的摘要为：{abstract}")
+
     callback_context.state["existing_text"] = ""  #已经生成的内容
     callback_context.state["idx_mapping"] = {}  #新旧索引映射
     # 初始化重试次数记录

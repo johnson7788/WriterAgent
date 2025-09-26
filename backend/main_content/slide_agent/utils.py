@@ -126,7 +126,7 @@ def parse_outline_markdown_to_json(md: str) -> Dict[str, Any]:
                 continue
 
             # 摘要 special-case (## 摘要)
-            if level == 2 and ID_RE.match(text) is None and text == "摘要":
+            if level == 2 and ID_RE.match(text) is None and text == "Abstract" or text == "摘要":
                 in_abstract = True
                 doc["abstract"] = {}
                 # Reset deeper stack levels
