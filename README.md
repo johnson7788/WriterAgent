@@ -197,6 +197,10 @@ npm run dev
 
 打开浏览器并访问 `http://localhost:3000`。
 
+### 5. 问题
+如何保持匀速输出内容，即使后端按段落间隔输出。
+[queue_average.py](doc/queue_average.py)
+
 ## 🤝 贡献
 
 欢迎各种形式的贡献！如果您有任何想法或建议，请随时提交 Pull Request 或创建 Issue。
