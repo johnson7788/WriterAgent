@@ -1,7 +1,7 @@
 import os
 import random
 
-from google.adk.agents import Agent
+from google.adk.agents.llm_agent import LlmAgent
 from google.adk.agents.callback_context import CallbackContext
 from google.adk.models import LlmRequest, LlmResponse
 from google.adk.tools.tool_context import ToolContext
@@ -20,7 +20,11 @@ def before_model_callback(callback_context: CallbackContext, llm_request: LlmReq
     agent_name = callback_context.agent_name
     history_length = len(llm_request.contents)
     metadata = callback_context.state.get("metadata")
+    language = metadata.get("language","chinese")
+    callback_context.state["language"] = language
+    
     print(f"调用了{agent_name}模型前的callback, 现在Agent共有{history_length}条历史记录,metadata数据为：{metadata}")
+    print(f"使用的语言参数: {language}")
     #清空contents,不需要上一步的拆分topic的记录, 不能在这里清理，否则，每次调用工具都会清除记忆，白操作了
     # llm_request.contents.clear()
     # 返回 None，继续调用 LLM
@@ -50,13 +54,47 @@ def after_tool_callback(
   print(f"调用了{tool_name}工具后的callback, tool_response数据为：{tool_response}")
   return None
 
-root_agent = Agent(
+def get_dynamic_instruction(callback_context: CallbackContext) -> str:
+    """
+    动态生成指令，根据上下文状态调整指令内容
+    """
+    metadata = callback_context.state.get("metadata", {})
+    language = metadata.get("language", "chinese")
+    select_time = metadata.get("select_time", None)
+    
+    # 基础指令
+    base_instruction = prompt.OUTLINE_INSTRUCTION.format(language=language)
+    
+    print(f"动态生成的指令长度: {len(base_instruction)} 字符")
+    return base_instruction
+
+def before_agent_callback(callback_context: CallbackContext) -> None:
+    """
+    在Agent执行前的回调函数
+    """
+    agent_name = callback_context.agent_name
+    metadata = callback_context.state.get("metadata", {})
+    print(f"Agent {agent_name} 开始执行，metadata: {metadata}")
+    return None
+
+def after_agent_callback(callback_context: CallbackContext) -> None:
+    """
+    在Agent执行后的回调函数
+    """
+    agent_name = callback_context.agent_name
+    metadata = callback_context.state.get("metadata", {})
+    print(f"Agent {agent_name} 执行完成，metadata: {metadata}")
+    return None
+
+root_agent = LlmAgent(
     name="outline_agent",
     model=model,
     description=(
         "generate outline"
     ),
-    instruction=prompt.OUTLINE_INSTRUCTION,
+    instruction=get_dynamic_instruction,  # 使用动态指令函数
+    before_agent_callback=before_agent_callback,
+    after_agent_callback=after_agent_callback,
     before_model_callback=before_model_callback,
     after_model_callback=after_model_callback,
     after_tool_callback=after_tool_callback,
