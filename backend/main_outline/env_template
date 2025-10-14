@@ -16,3 +16,6 @@ LLM_MODEL=deepseek-chat
 # 是否使用代理，clash的代理7890
 # HTTP_PROXY=http://127.0.0.1:7890
 # HTTPS_PROXY=http://127.0.0.1:7890
+
+# search_api的地址
+SEARCH_TOOL_API=http://127.0.0.1:10052
