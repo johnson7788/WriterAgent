@@ -34,6 +34,37 @@ PAREN_RE = re.compile(r"（[^）]*）", re.U)
 TAG_RE = re.compile(r"<[^>]+>", re.U)
 ESCAPED_BRACKET_RE = re.compile(r"\\([\[\]\(\)])", re.U)
 
+def strip_reference_suffix(s: str) -> str:
+    """
+    更鲁棒的尾部引用/括号清理。
+    循环删除尾部的：
+      - 方括号块（如 [1]、[Smith et al]）
+      - 包含方括号或纯数字的圆括号/中文括号（如 （[ref][1]）、（2））
+    并允许它们以逗号/中文逗号/分号等分隔或连续出现。
+    """
+    if not s:
+        return s
+    s = s.rstrip()
+    unit_re = re.compile(
+        r"""(?x)
+        (?:[\s\,\，\;\:\、\-\–\—\/]*)
+        (?:
+            \[[^\]]+\]                             # 方括号块
+          |
+            [\(\（][^\)\）]*?(?:\[[^\]]+\]|\b\d+\b)[^\)\）]*[\)\）]  # 括号内含方括号或数字
+        )
+        \s*$""")
+    changed = True
+    while changed:
+        changed = False
+        m = unit_re.search(s)
+        if m:
+            s = s[:m.start()].rstrip()
+            changed = True
+    # 去掉尾部多余的标点/空白
+    s = re.sub(r"[\s\-\–\—\,:;，、\u3000]+$", "", s)
+    return s.strip()
+
 def normalize_inline(s: str) -> str:
     """
     规范化行内文本：
@@ -120,7 +151,7 @@ def parse_outline_markdown_to_json(md: str) -> Dict[str, Any]:
 
             # Title (# ...)
             if level == 1:
-                doc["title"] = text
+                doc["title"] = strip_reference_suffix(text)
                 in_abstract = False
                 stack.clear()
                 continue
@@ -140,9 +171,9 @@ def parse_outline_markdown_to_json(md: str) -> Dict[str, Any]:
             if m_id:
                 node_id, title_text = m_id.group(1), m_id.group(2).strip()
                 node["id"] = node_id
-                node["title"] = title_text
+                node["title"] = strip_reference_suffix(title_text)
             else:
-                node["title"] = text
+                node["title"] = strip_reference_suffix(text)
 
             # Place node into tree according to heading level
             stack[level] = node

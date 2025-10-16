@@ -125,6 +125,10 @@ def search_api(keyword: str, limit: int = 4, search_engine="default"):
     resp = httpx.post(url, json=data, headers=headers, timeout=None, trust_env=False)
     took = time.time() - start_time
     print(f"[search] status={resp.status_code}, took={took:.2f}s")
+    
+    if resp.status_code != 200 or not resp.text:
+        return {}
+    
     return resp.json()
 
 async def DocumentSearch(
@@ -165,6 +169,10 @@ async def DocumentSearch(
             idx_val = len(references) + 1
             article_url = article_dict["url"]
             article_title = article_dict["title"]
+            article_author = article_dict.get("author", "")
+            article_journal = article_dict.get("journal", "")
+            article_docdoi = article_dict.get("docdoi", "")
+            article_year = article_dict.get("publish_time", "")
             if not article_url:
                 article_url = "https://www.bing.com/search?q=" + article_title
             references[file_id] = {
@@ -188,9 +196,12 @@ async def DocumentSearch(
         title = reference_info.get("title", "N/A")
         publish_time = reference_info.get("publish_time", "N/A")
         snippet_content = reference_info.get("snippet", "N/A")
+        author = reference_info.get("author", "N/A")
+        journal = reference_info.get("journal", "N/A")
+        docdoi = reference_info.get("docdoi", "N/A")
 
         articles_content.append(
-            f"{idx_val}. {title}\n时间: {publish_time}\n内容: {snippet_content}"
+            f"{idx_val}. 标题：{title}\n时间: {publish_time}\n内容: {snippet_content}\n作者: {author}.\n期刊: {journal}.\nDOI: {docdoi}\n\n"
         )
 
     # 重新设置 tool_context 中的 references
