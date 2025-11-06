@@ -1,2392 +1,1370 @@
-data: {"type": "text", "text": "我将"}
+data: {"type": "data", "data": {"type": "function_call", "id": "call_10894a0c-c5d4-444d-81fd-b87aa7e98853", "name": "DocumentSearch", "args": {"keyword": "移动学习环境 认知负荷 管理 元认知策略 应用 效果评估"}}, "author": "outline_agent"}
 
-data: {"type": "text", "text": "为您"}
+data: {"type": "data", "data": {"type": "function_response", "id": "call_10894a0c-c5d4-444d-81fd-b87aa7e98853", "name": "DocumentSearch", "response": {"result": ["1. 标题：BNU-SLI系列学术活动——智慧学习环境中的认知负荷问题-智慧学习研究院（发布时间：2016-11-12 15:59:00）\n时间: 2016-11-12\n内容: 11月11日下午，研究院此次学术活动邀请了高级研究员高媛博士为我们分享了认知负荷的相关理论知识，带领同学们深入到科研设计的领地，探讨教育技术的应用策略，为同学们拓宽了认知负荷的理论视野。 高媛博士 高媛博士从人脑认知历程模型讲起，告诉我们外部信息是通过视、听觉等感官进入人的感觉记忆，提高个体注意力后可形成短暂的工作记忆…\n\n", "2. 标题：元认知策略  MBA智库百科\n时间: \n内容: 出自 MBA智库百科( https://wiki.mbalib.com/ ) 元认知策略(Meta-cognitive Strategies) 目录 编辑 ] 什么是元认知策略 所谓元认知策略是指控制信息的流程，监控和指导认知过程进行的策略。元认知策略是利用认知过程中获得的知识，通过确立学习目标与计划，监控学习过程和评…\n\n", "3. 标题：学生的学习发展—学习策略（第44期）\n时间: \n内容: (一)概述学习策略是指学习者在学习活动中，为了达到有效的学习目的而采用的规则、方法、技巧及其调控方式的综合。(二)分类根据迈克尔等人在1990年的分类，可将学习策略分为三种：认知策略、元认知策略和资源管理策略。1.认知策略(1)复述策略:利用无意识记和有意识记；排除抑制干扰；整体记忆与分段记忆；多种感官参与；画线、圈点…\n\n", "4. 标题：2011年小学教育心理学考试大纲讲解：学习策略（发布时间：2022-03-01 19:30:00）\n时间: 2022-03-01\n内容: 第八章 学习策略 第一节 典型的学习策略 学习策略是指学习者为了提高学习的效果和效率，有目的有意识地制定的有关学习过程的复杂的方案。 一般来说，学习策略可分为认知策略、元认知策略和资源管理策略三种。 一、认知策略 (一)复述策略 复述策略是在工作记忆中为了保持信息，运用内部语言在大脑中重现学习材料或刺激，以便将注意力维…\n\n", "5. 标题：基于多模态数据的在线学习认知负荷评估-现代教育技术2024年03期-手机知网\n时间: \n内容: 基于多模态数据的在线学习认知负荷评估 华东师范大学教育信息技术学系; 华东师范大学上海数字化教育装备工程技术研究中心 | 薛耀锋 王坤 邱奕盛 朱芳清 开通知网号 近年来，认知负荷过载成为影响在线学习效果的一个重要因素。为解决此问题，文章聚焦在线学习认知负荷评估，首先设计了基于多模态数据的在线学习认知负荷评估研究框架，…\n\n", "6. 标题：教师招聘常考考点之元认知的结构（发布时间：2021-02-25 21:33:19）\n时间: 2021-02-25\n内容: 一、知识解析 在教招考试中，每次提到“元认知”，我们总是会感到似曾相识，但又很陌生。今天我们就专门来学习下元认知的结构。这部分知识属于陈琦、刘儒德当代教育心理学一书中第四部分分类学习心理第十二章学习策略的内容。本部分知识主要是以客观题的形式考查，偏向于理解。 在学习的信息加工系统中，存在着一个对信息流动的执行控制过程，…\n\n", "7. 标题：如何理解学习策略\n时间: \n内容: 学习策略是指学习者为了提高学习的效果和效率，有目的，有意识地制订的有关学习过程的复杂方案，其包括认知策略，元认知策略，资源管理策略。那我们如何理解学习策略呢？$P$(I_M_G)1认知策略包括复述策略（重复，抄写，做记录，画线），精细加工策略（想象，口述，总结，做笔记，类比，质疑）组织策略（组块，选择重点，列提纲，画地…\n\n", "8. 标题：如何理解元认知策略\n时间: \n内容: 元认知是对自身认知的认知，元认知包括元认知知识、元认知体验和元认知监控三个方面，那么如何理解元认知策略呢？$P$(I_M_G)1元认知策略是学生对自己认知过程的认知策略，包括对自己认知过程的了解和控制策略$P$(I_M_G)2计划策略是根据认知活动的特定目标，在一项认知活动之前计划各种活动、预计结果、选择策略、想出各种…\n\n", "9. 标题：基于微信的大学英语移动学习效果探析\n时间: \n内容: 《西部素质教育》 作者本人免费下载 | 收藏 | 投稿 | 胡瑞娟 开通知网号 【摘要】：为了更好地提高教学效率,收获良好的教习效果,文章对微信中大学英语移动学习策略进行了研究,探讨微信如何从认知策略、元认知策略、资源管理等方面提升大学英语学习效果,并结合具体案例进行了详细分析。 下载全文 更多同类文献 个人查重>> …\n\n", "10. 标题：学习策略（发布时间：2024-03-20 03:31:20）\n时间: 2024-03-20\n内容: 一、学习策略的界定学习策略是指学习者为了提高学习的效果和效率，有目的、有意识订的有关学习过程的复杂的方案。二、学习策略的分类(一)认知策略是加工信息的一些方法和技术。1.复述策略\t2.精细加工策略\t3.组织策略\t(二)元认知策略是指控制信息的流程，监控和指导认知过程进行的策略。1.计划策略\t2.监控策略\t3.调节策略\t…\n\n"]}}, "author": "outline_agent"}
 
-data: {"type": "text", "text": "搜索"}
+data: {"type": "text", "text": "#", "author": "outline_agent"}
 
-data: {"type": "text", "text": "关于"}
+data: {"type": "text", "text": " 移", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "地对"}
+data: {"type": "text", "text": "环境", "author": "outline_agent"}
 
-data: {"type": "text", "text": "居民"}
+data: {"type": "text", "text": "下的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的相关"}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "文献"}
+data: {"type": "text", "text": "：", "author": "outline_agent"}
 
-data: {"type": "text", "text": "，"}
+data: {"type": "text", "text": "基于", "author": "outline_agent"}
 
-data: {"type": "text", "text": "然后"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "生成"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "严谨"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的"}
+data: {"type": "text", "text": "的应用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "综述"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "大纲"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "。"}
+data: {"type": "text", "text": "评估", "author": "outline_agent"}
 
-data: {"type": "text", "text": "我将为您搜索关于城市绿地对居民心理健康影响的相关文献，然后生成严谨的综述大纲。"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_call", "id": "call_00_2XR2BJ5yT6dQ7lwY51Bt6Dll", "name": "DocumentSearch", "args": {"keyword": "城市绿地 心理健康 机制"}}}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_response", "id": "call_00_2XR2BJ5yT6dQ7lwY51Bt6Dll", "name": "DocumentSearch", "response": {"result": ["1. 标题：国家科技期刊平台基于准自然实验方法的城市绿道暴露与居民心理健康的因果机制研究\n时间: \n内容: 基于准自然实验方法的城市绿道暴露与居民心理健康的因果机制研究OA北大核心CHSSCDCSTPCD 【目的】城市绿色空间是影响居民心理健康的重要因素,城市绿道建设已被认为是有效的绿色空间干预措施之一,探究城市绿道与居民心理健康的因果机制,对于优化绿色空间规划布局、提升居民心理健康水平具有重要的理论意义。【方法】运用准自然…\n\n", "2. 标题：拔尖计划成果展示-马凯-2021级（发布时间：2025-02-28 22:33:17）\n时间: 2025-02-28\n内容: 我院2021级人文地理与城乡规划（国土空间规划方向）专业本科生马凯同学以第一作者在《Environmental Research》上发表拔尖计划研究成果文章 “Perceived biodiversity of public greenspace and mental well-being”。 城市绿地作为重要的生态基…\n\n", "3. 标题：华南植物园城市绿地心理健康效益评估研究获进展—论文—科学网（发布时间：2021-06-09 12:26:00）\n时间: 2021-06-09\n内容: 作者：刘红晓等 来源：《清洁生产杂志》 发布时间：2021/6/9 12:26:35 目前，我国有11%-15%的人口存在轻到中度的心理问题，2%-3%的人口存在中到重度的心理健康问题。城市中湿地、绿地等自然空间可以改善居民的心理健康，但我国城市的相关证据仍较少。 中国科学院华南植物园生态中心刘红晓在2018年和202…\n\n", "4. 标题：单靠城市绿色空间是不够的：一项将芝加哥城市绿色空间分布与心理健康连接在一起的景观分析\n时间: \n内容: “阅读笔记”研究使用的心理数据由芝加哥公共卫生部在2015年至2017年进行的健康调查（HCS）提供。景观数据来自芝加哥市的高分辨率土地覆盖（HRLC）数据。研究将树冠、草/灌木和水作为城市绿地的独立类别。3.1结果变量心理困扰：研究使用Kessler 6心理困扰量表对受访者的心理困扰进行评分。其中得分范围从0（无心理…\n\n", "5. 标题：你生活的地方绿树多吗？研究表明，这样的环境有益健康！（发布时间：2020-09-26 00:00:00）\n时间: 2020-09-26\n内容: 日益加速的城市化进程对心理健康和生物多样性都是一种威胁。预计到2030年，全球城市覆盖面积将增加到190万平方公里，52亿人将生活在城市地区。抑郁症，特别是在城市地区，患病的人数明显上升。除其他因素外，心理健康程度也会受到生活环境类型的影响。以前的研究表明，城市绿地对心理健康不佳的人有积极的好处，但这些研究大多使用自我…\n\n", "6. 标题：绿地自然暴露与自然联结度对心理健康影响获揭示—新闻—科学网（发布时间：2022-04-14 12:36:00）\n时间: 2022-04-14\n内容: 作者：朱汉斌 刘红晓 来源：中国科学报 发布时间：2022/4/14 12:36:39 中国科学院华南植物园生态中心研究人员揭示了绿地自然暴露与自然联结度对心理健康的影响。相关研究近日发表于《景观与城市规划》。 我国成人各类神经障碍终身患病率高达16.6%，心理健康疾病产生的负担在全部疾病负担中排第二，加强促进心理健康…\n\n", "7. 标题：新研究表明，住在绿色空间附近可以降低抑郁症和焦虑症的患病风险（发布时间：2024-04-24 15:11:07）\n时间: 2024-04-24\n内容: 近年来，随着人口大规模迁往城市，乡村地区无论规模还是人口数量均急剧缩减。城市中公园和其他绿地常被视为提升居民福祉的宝贵资源，但迄今为止，关于这些绿色空间对心理健康影响的深入研究却寥寥无几。 中国华中科技大学的研究人员近期开展了一项探索性研究，旨在揭示长期居住在接近绿色空间环境中与抑郁症和焦虑症——两大心理疾病——之间的…\n\n", "8. 标题：城市绿地梅花听嗅刺激对人体情绪及压力恢复研究（发布时间：2024-03-18 09:07:00）\n时间: 2024-03-18\n内容: 王一凡 金荷仙 周艳慧 张林浩 陆 磊 随着城市建设向着高密度发展，城市绿地空间不断被压缩，经历了重大健康卫生事件后，公众健康更是成为重点关注对象。快节奏的生活和高强度的工作给城市居民带来了越来越多的压力[1-2]。《2022年中国国民心理健康报告》蓝皮书指出，国民心理健康问题凸显，其中，作为社会重点关注的学生群体，面…\n\n", "9. 标题：城市蓝绿空间对老年心理健康影响机制的3个结果（发布时间：2023-09-30 16:15:00）\n时间: 2023-09-30\n内容: 核心提示：城市蓝绿空间对老年心理健康影响机制的探究与检验_ 结果与讨论 笔者基于现有理论和研究基础提出了蓝绿空间对老年心理健康作用的研究框架。利用多源数据，通过分层线性模型和多层结构方程模型比较了不同测度方式下蓝绿空间的作用差异，并通过活动能力、环境感知和社会凝聚的中介效应分析造成差异的内在原因和干预路径，同时在空间多…\n\n", "10. 标题：城市绿地对公共健康的影响机制研究——近20年国外期刊的分析\n时间: \n内容: 摘要： 城市绿地在促进人的健康方面有重要作用.基于Web of Science数据库,通过CiteSpace与HistCite工具,对国外近20年与城市绿地和公共健康相关的文献进行分析,提出了基于\"访问频次\"的绿地对公共健康的影响机制框架.主要分析了绿地是如何作用于公众心理,生理,身体健康及公共交往的.发现:①国外对促…\n\n"]}}}
+data: {"type": "text", "text": " 摘", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_call", "id": "call_00_sVdeh7zoxN2cpNEtgoo4HTtj", "name": "DocumentSearch", "args": {"keyword": "绿地规划 心理健康 量化评估"}}}
+data: {"type": "text", "text": "要", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_response", "id": "call_00_sVdeh7zoxN2cpNEtgoo4HTtj", "name": "DocumentSearch", "response": {"result": ["11. 标题：斯坦福领衔全球荟萃研究揭示：城市自然可显著改善心理健康！（发布时间：2025-07-31 00:00:00）\n时间: 2025-07-31\n内容: 在高楼林立的都市里，你是否曾 因在公园的一次漫步、一场湖畔静坐，而感到内心的平静与愉悦？这并非偶然。来自斯坦福大学自然资本项目（Natural Capital Project）的最新研究，用全球最大规模的实证证据，量化了城市自然对心理健康的积极影响。 近日，斯坦福大学自然资本项目（Natural Capital Pro…\n\n", "6. 标题：绿地自然暴露与自然联结度对心理健康影响获揭示—新闻—科学网（发布时间：2022-04-14 12:36:00）\n时间: 2022-04-14\n内容: 作者：朱汉斌 刘红晓 来源：中国科学报 发布时间：2022/4/14 12:36:39 中国科学院华南植物园生态中心研究人员揭示了绿地自然暴露与自然联结度对心理健康的影响。相关研究近日发表于《景观与城市规划》。 我国成人各类神经障碍终身患病率高达16.6%，心理健康疾病产生的负担在全部疾病负担中排第二，加强促进心理健康…\n\n", "12. 标题：居住区内的小微绿地能为疫情下的人们带来怎样的改变？（发布时间：2021-09-01 07:40:00）\n时间: 2021-09-01\n内容: 原标题：居住区内的小微绿地能为疫情下的人们带来怎样的改变？   导 读  居住区绿地作为城市居民接触频率较高的城市绿地类型之一，对居民的心理健康具有积极作用。为了解居住区绿地在2020年新冠肺炎（COVID-19）疫情期间对居民心理健康的影响，本研究于2020年3月以中国安徽省合肥市政务文化新区的住户为样本，通过网络问…\n\n", "13. 标题：绿地有益健康，“剂量”大有讲究（发布时间：2024-02-01 07:50:10）\n时间: 2024-02-01\n内容: ■本报记者 张双虎 研究表明，绿地暴露（接触）对人的生理和心理健康均有益处，但绿地暴露到底能带来哪些好处？暴露多久才对健康有益？如何在有限时间内实现绿地健康效益最大化？这些问题人们并不清楚。 为此，复旦大学环境科学与工程系研究员余兆武团队在大量实验基础上，提出“暴露生态学”理论框架，系统理解生态暴露对健康的影响，并设计…\n\n", "14. 标题：将用户的适应行为纳入城市绿地规划（发布时间：2022-12-06 17:47:13）\n时间: 2022-12-06\n内容: 新加坡国立大学的生态学家开发了一个估值框架，该框架结合了用户对绿色城市空间的需求，以评估其生态系统服务(ES)提供的效益。 城市绿地贡献了多种与人类福祉和心理健康相关的ES，如空气净化、降噪、降温和娱乐等。ES的值通常呈现为静态“快照”映射，捕获给定时间范围内的参数。然而，静态地图对城市规划的价值有限，因为ES值也由此…\n\n", "15. 标题：MDPI Land：评估城市绿地不平等以促进俄勒冈州波特兰市的分配公正（发布时间：2025-04-18 15:00:35）\n时间: 2025-04-18\n内容: 点击左上角“MDPI环境与地球科学”关注我们，为您推送更多最新资讯。 “ 文章导读 城市地区目前容纳了全球大部分人口，预计到 2050 年前，城市地区与全球人口的比例将继续增加。深入理解城市景观对人类健康的影响，对制定有效的公共政策和土地利用规划至关重要。研究显示，城市环境与多项重大公共卫生问题存在关联，包括大气污染物…\n\n", "16. 标题：[转载]《中国科学报》发表UEEE LAB最新研究：关注“上游”健康，“剂量”大有讲究（发布时间：2024-01-31 21:12:51）\n时间: 2024-01-31\n内容: 研究表明，绿地暴露（接触）对人的生理和心理健康均有益处，但绿地暴露能带来哪些好处？绿地暴露多久对健康有益？以及如何在有限时间内最大化绿地健康效益等问题人们并不清楚。为此，复旦大学环境科学与工程系研究员余兆武团队在大量实验基础上，提出“暴露生态学”理论框架来系统理解生态暴露对健康的影响，并设计出定量绿地暴露生理健康效率阈…\n\n", "17. 标题：城市光环境对情绪影响的多模态研究-化工仪器网-手机版（发布时间：2024-12-19 17:23:00）\n时间: 2024-12-19\n内容: 城市光环境以及其对人的心理和生理的影响如何，是城市规划、建筑设计以及环境心理学等诸多学科共同讨论的课题，但如何科学地量化评估却较为困难。 随着近几年神经生物学及可穿戴生理传感器技术的成熟化，对实验室研究光环境的身心体验提供了理论基础和技术支持。来自同济大学的研究团队就基于可穿戴设备获取生理反馈数据，结合面部表情与自我报…\n\n", "18. 标题：社会调查研究与方法形成性考核一（发布时间：2023-05-04 12:07:45）\n时间: 2023-05-04\n内容: 请结合自己的工作、生活或当前社会关注热点，自定主题，简要地制订一个社会调查方案。城市绿化对居民生活质量的影响调查目的：调查城市绿化对居民生活质量的影响，了解居民对城市绿化的需求和意识，为城市绿化政策提供参考。调查对象：城市居民、园林绿化部门工作人员、城市规划专家。调查内容：城市绿化现状：绿地面积、绿化率、绿化类型等。城…\n\n", "19. 标题：生涯规划 向“心”而生                —杜集区心理健康与学校生涯规划融合途径交流会（发布时间：2023-10-30 13:15:43）\n时间: 2023-10-30\n内容: 10月29日，淮北市杜集区教育局组织在淮海绿地21城实验学校召开杜集区心理健康与学校生涯规划融合途径交流会。心理健康与生涯规划融合教育是新时代教育改革的必然趋势，是提升学校人才培养质量的应有之意，也是解决学生身心健康发展问题的实践诉求。北京师范大学教授黄四林、淮北师范大学教授赵小云、副教授王淑燕、安徽省心理卫生协会中小…\n\n"]}}}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_call", "id": "call_00_Wl0HLscitFl0mRnmZsEYCpn3", "name": "DocumentSearch", "args": {"keyword": "绿色空间 压力恢复 情绪调节"}}}
+data: {"type": "text", "text": "-", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_response", "id": "call_00_Wl0HLscitFl0mRnmZsEYCpn3", "name": "DocumentSearch", "response": {"result": ["20. 标题：当绿色生活遇见心灵疗愈（发布时间：2025-04-22 09:05:13）\n时间: 2025-04-22\n内容: 世界地球日特辑 当绿色生活遇见心灵疗愈 为什么说「绿色」是最好的心灵解药？ 4月22日是第56个世界地球日，今年的主题是“珍爱地球，人与自然和谐共生”。当我们谈论“绿色生活”时，不仅是在守护蓝色星球，更是在为自己的心灵打造一片「治愈绿洲」。科学研究早已发现：自然与心理健康之间，藏着千丝万缕的联系。 #01 绿色生活，给…\n\n", "8. 标题：城市绿地梅花听嗅刺激对人体情绪及压力恢复研究（发布时间：2024-03-18 09:07:00）\n时间: 2024-03-18\n内容: 王一凡 金荷仙 周艳慧 张林浩 陆 磊 随着城市建设向着高密度发展，城市绿地空间不断被压缩，经历了重大健康卫生事件后，公众健康更是成为重点关注对象。快节奏的生活和高强度的工作给城市居民带来了越来越多的压力[1-2]。《2022年中国国民心理健康报告》蓝皮书指出，国民心理健康问题凸显，其中，作为社会重点关注的学生群体，面…\n\n", "21. 标题：【潜山路校区•向阳班级】育见绿光：以植物为师，伴九年级学子向阳而行（发布时间：2025-09-10 20:11:20）\n时间: 2025-09-10\n内容: 以植物为师 伴九年级学子向阳而行 潜山路校区 近日，合肥市五十中学天鹅湖教育集团潜山路校区九（6）班巧妙利用教室走廊空间，打造了一处名为“绿意心灵驿站”的植物角休闲区。这一举措不仅丰富了班级文化内涵，更成为九年级学子在紧张学习中缓解压力、调节情绪的一方静土。 为应对初三阶段的学业压力与情绪波动，班主任许老师与班委共同发…\n\n", "22. 标题：什么颜色的装饰有助于调节烦躁紧张的心情\n时间: \n内容: 楼主你好！蓝色和绿色是大自然赋予人类的最佳心理镇静剂,脑电波对红色的反应是警觉，对蓝色是放松，人都有这样的体会，当心情烦躁不安时，到公园或海边看看，心情会很快恢复平静，这正是蓝色和绿色对心理调节的结果。这些色调还有帮助降低皮肤温度、减少脉搏次数、降低血压、减轻心脏负担等作用。 当工作了一天的你感觉身心疲惫、压力重重、精…\n\n", "23. 标题：成本极低！在鲤城，这个方法快速改善情绪！（发布时间：2025-04-08 12:06:45）\n时间: 2025-04-08\n内容: 你是否为了护眼 将电子屏幕调成护眼模式？ 将文档调成绿色背景？ 将绿色图片设为屏保？ 那不如—— 把视线移开屏幕 走进古城的春天 来看看树吧！ 近年来 鲤城持续扩大城市绿色空间 提升城市绿化质量 2024年 全区新增改造绿地超过5公顷 走进春日古城 随处可见生机盎然，嫩芽新绿 实验表明，凝视绿色场景10分钟 能够让皮质…\n\n", "24. 标题：小榄这个“绿色打卡点” 你来过吗？\n时间: \n内容: 是一个集低碳环保知识宣导、情绪压力舒缓调节、应急救援知识学习为一体的自助式社区口袋公园。园区内通过多功能智能分类设备让群众体验式学习低碳环保、垃圾分类知识；同时以宣传、科普心理健康知识为核心，借助运用环境心理学相关理论知识，为群众提供一个调节、放空情绪的空间；借助应急救援教具，让群众学习生命健康安全教育知识，把“爱护环…\n\n", "25. 标题：孕妇对虚拟绿色空间的生理与情感反应\n时间: \n内容: 研究背景<<<<Research Background>>>>   亲生物假说；注意力恢复理论；压力恢复理论。降低全因死亡率、心血管疾病、2型糖尿病的风险，改善妊娠结局，例如降低低出生体重和早产的风险，以及改善心理健康。暴露于自然环境与手术恢复、生产力、认知和情感改善和减压。虚拟环境刺激方法：先前的研究发现，与沉浸在真…\n\n", "26. 标题：测试城市绿色环境对缓解压力的影响:野外试验\n时间: \n内容: 原文题目：原文作者：期刊名期刊月份：2014年6月DOI：本研究调查了短期访问城市自然环境的心理(知觉恢复性、主观活力、情绪、创造力)和生理(唾液皮质醇浓度)效应。77名参与者参观了三种不同类型的城市地区;一个建成的城市中心(作为控制环境)，一个城市公园和城市林地，都位于芬兰首都赫尔辛基。研究结果表明，大型城市公园和大…\n\n", "27. 标题：情绪的色彩疗愈（发布时间：2023-06-26 16:43:39）\n时间: 2023-06-26\n内容: 情绪一：紧张、压力大、疲惫推荐色彩：蓝色、绿色忌讳色彩：红色科学家们通过人么脑电波随颜色视觉而有所变化的实验发现，脑电波对红色的反应是警觉，对蓝色是放松。蓝色和绿色是大自然赋予人类的最佳心理镇静剂。人都有这样的体会，当心情烦躁不安时，到公园或海边看看，心情会很快恢复平静，这正是蓝色和绿色对心理调节的结果。这些色调还有帮…\n\n", "28. 标题：绿色空间的心理益处取决于一个人的人格特质吗?\n时间: \n内容: 点击蓝字 关注我们根据注意力恢复理论，大自然会产生恢复性的心理益处，减少压力，恢复注意力疲劳。在一定程度上是因为恢复性环境具有内在的吸引力，这种“魅力”抑制了人们对注意力的争夺。这种心理效益的程度可能在很大程度上取决于个人的人格特质，这种联系在其他研究中也有所表达：“人格特质很重要，因为它们影响个人如何与特定环境互动……\n\n"]}}}
+data: {"type": "text", "text": " 背", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_call", "id": "call_00_kU9DX4Qu15fuFdroZiK4hj3p", "name": "DocumentSearch", "args": {"keyword": "生态系统服务 社会凝聚力 环境公平"}}}
+data: {"type": "text", "text": "景", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_response", "id": "call_00_kU9DX4Qu15fuFdroZiK4hj3p", "name": "DocumentSearch", "response": {"result": ["29. 标题：6谈谈对生态系统服务功能的认识\n时间: \n内容: 谈谈对生态系统服务功能的认识 生态系统给人类提供了自然资源和生存环境两个方面的多种服务功能，这些服务功能的可持续供给是经济社会可持续发展的基础。生态系统是一个复杂的系统，内部各要素和各种生态系统服务之间都存在复杂的相互作用，当人类选择性的强调某一种生态系统服务时，往往会损害到其他一种或多种服务的提供，导致预期之外的生态…\n\n", "30. 标题：【文献分享ES】将生态恢复项目对生态系统服务和人类福祉影响的认知联系起来，以实现区域可持续性（发布时间：2025-03-29 08:31:01）\n时间: 2025-03-29\n内容: ✦++ 点击蓝字 关注我们 土地科学文献传递 + + + + + + + + + + + 主题：退耕还林工程（Grain for Green Program）、社会生态系统（Social-ecological system）、生态补偿政策（Ecological compensation policy） 文章发表在国际期…\n\n", "31. 标题：【文献分享ES】基于SolVES模型的农村生态系统服务社会值评估——以南京市为例\n时间: \n内容: 本文发表于国际期刊Forests，2022年第13卷，通讯作者为东南大学建筑学院的徐宁副教授。文章指出，生态系统服务（ES）是指人类为生存和发展直接或间接从生态系统中获得的产品或利益，包括有形的物质资源和无形的精神服务。由于城市化加速了农村生态环境的恶化，影响了农村生态系统服务的社会价值供给，并且利益相关者群体对社会价…\n\n", "32. 标题：为什么要开展生态系统服务价值评估？（发布时间：2021-08-03 20:34:00）\n时间: 2021-08-03\n内容: 生物多样性下降和生态系统服务功能退化，是当今世界面临的主要环境危机之一。 党的十八大提出要把资源消耗、生态效益纳入经济社会发展评价体系，建立体现生态文明要求的目标体系、考核办法、奖惩机制；建立反映市场供求和资源稀缺程度、体现生态价值和代际补偿的资源有偿使用制度和生态补偿制度。党的十九大进一步提出建立市场化、多元化生态补…\n\n", "33. 标题：【SUSTAIN CITIES SOC】如何优化生态补偿以缓解不同城市间的环境不公平？黄河流域生态系统服务供-需-流研究\n时间: \n内容: 1 文章信息文章题目：How to optimize ecological compensation to alleviate environmental injustice in different cities in the Yellow River Basin? A case of integrating eco…\n\n", "34. 标题：社会—生态系统综合风险防范的凝聚力模式-期刊-钛学术文献服务平台\n时间: \n内容: 摘要： 在综合风险防范“凝聚力”概念的基础上,从社会—生态系统综合风险防范的“凝聚力”基本原理、凝聚力形成中的协同效能、凝聚力实现手段、凝聚力优化对提高系统抗打击能力的作用等方面系统研究了“凝聚力”的科学内涵,并初步建立了“凝聚力”的模式,以期完善现有综合风险防范理论体系.结果表明:协同宽容、协同约束、协同放大和协同分…\n\n", "35. 标题：生态系统服务价值评估研究进展\n时间: \n内容: 1. 引言 生态系统为人类提供燃料食物、水源涵养、文化教育等经济、生态、社会服务，是重要的自然资源资产。近年来，由于不合理开发利用、环境污染、生态退化等问题层出不穷，严重影响人类生存。我国政府高度重视自然资源资产和生态环境问题，要求全面评估自然资源资产，编制自然资源资产负债表，加强生态文明建设。党的十九大报告及2018…\n\n", "36. 标题：评估生态系统服务的社会价值（发布时间：2023-05-17 09:59:07）\n时间: 2023-05-17\n内容: 用于评估生态系统服务的社会价值，能够量化美学、生物多样性、休闲生活、文娱活动等生态系统服务功能的社会价值，其评测结果以公众态度和偏好得出，非货币化价值指数表示，具有较高的应用价值。SoLVES模型多应用于景观、公园等生态环境的社会价值评估。      从运用SolVES模型优秀论文推荐→SolVES模型的适用→SolV…\n\n", "37. 标题：基于InVEST模型的生态系统服务权衡协同关系研究\n时间: \n内容: 《西北师范大学》 2018年 作者本人免费下载 | 收藏 | 潘翔 开通知网号 【摘要】： 生态系统服务作为连接生态系统和社会系统之间的桥梁。随着人民日益增长的美好生活需要和不平衡不充分的发展之间矛盾的加剧,生态环境日益恶化,导致生态系统服务功能出现了退化,同时引发了区域性甚至全球性的生态环境问题。使得生态系统服务对维…\n\n", "38. 标题：【SolVES 模型】生态系统服务功能社会价值评估（基于多源环境QGIS、PostgreSQL、ArcGIS、Maxent、R语言）（发布时间：2023-05-18 16:19:45）\n时间: 2023-05-18\n内容: SolVES模型（Social Values for Ecosystem Services）全称为生态系统服务社会价值模型，是由美国地质勘探局和美国科罗拉多州立大学联合开发的一款地理信息系统应用程序，开发该模型的目的主要是对生态系统服务功能中的社会价值进行空间分析和量化评估。此模型评估的社会价值类型多种多样，比如：美学…\n\n"]}}}
+data: {"type": "text", "text": "：", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_call", "id": "call_00_iLS8kJOY0kM6JUyerqE2ZeQP", "name": "DocumentSearch", "args": {"keyword": "自然暴露 剂量效应 阈值研究"}}}
+data: {"type": "text", "text": "移动", "author": "outline_agent"}
 
-data: {"type": "data", "data": {"type": "function_response", "id": "call_00_iLS8kJOY0kM6JUyerqE2ZeQP", "name": "DocumentSearch", "response": {"result": ["39. 标题：量化绿地暴露生理健康效益的阈值效应（发布时间：2023-10-08 15:28:52）\n时间: 2023-10-08\n内容: 近期，复旦大学余兆武团队在国际专业领域顶级期刊Landscape and Urban Planning发表论文提出了定量绿地暴露生理健康效率阈值与效益阈值的模型与方法。本研究可以为定量绿地暴露生理健康效应提供重要基础。也是暴露生态学理论框架下绿地暴露研究的重要理论基础。摘要尽管相关研究证实绿地暴露与生理健康效益之间存在…\n\n", "40. 标题：暴露量-效应关系的这几点不可不知（发布时间：2021-11-07 19:56:43）\n时间: 2021-11-07\n内容: 文章来源：linklab微信公众号 新药临床试验涉及到临床药理学研究、剂量探索性临床治疗试验和确证性临床治疗试验，其中暴露量-效应关系研究是关键。小编今天将为大家梳理一下新药临床试验中暴露量-效应关系研究的内容，希望能在审评、提高临床研究质量、降低临床失败风险等方面帮助到大家。 暴露量-效应关系研究为什么受到学术界和监…\n\n", "13. 标题：绿地有益健康，“剂量”大有讲究（发布时间：2024-02-01 07:50:10）\n时间: 2024-02-01\n内容: ■本报记者 张双虎 研究表明，绿地暴露（接触）对人的生理和心理健康均有益处，但绿地暴露到底能带来哪些好处？暴露多久才对健康有益？如何在有限时间内实现绿地健康效益最大化？这些问题人们并不清楚。 为此，复旦大学环境科学与工程系研究员余兆武团队在大量实验基础上，提出“暴露生态学”理论框架，系统理解生态暴露对健康的影响，并设计…\n\n", "41. 标题：药物暴露-效应关系研究技术指导原则发布（发布时间：2025-08-04 14:44:00）\n时间: 2025-08-04\n内容: 滚动播报  08.04 14:44 （来源：中国食品药品网） 中国食品药品网讯（记者落楠） 7月30日，国家药监局药品审评中心发布《药物暴露-效应关系研究技术指导原则》（以下简称《指导原则》）。 药物暴露-效应关系研究旨在评估药物在不同剂量下的暴露量和效应之间的定量关系。暴露-效应关系是支持新药有效性和安全性评估的核心…\n\n", "16. 标题：[转载]《中国科学报》发表UEEE LAB最新研究：关注“上游”健康，“剂量”大有讲究（发布时间：2024-01-31 21:12:51）\n时间: 2024-01-31\n内容: 研究表明，绿地暴露（接触）对人的生理和心理健康均有益处，但绿地暴露能带来哪些好处？绿地暴露多久对健康有益？以及如何在有限时间内最大化绿地健康效益等问题人们并不清楚。为此，复旦大学环境科学与工程系研究员余兆武团队在大量实验基础上，提出“暴露生态学”理论框架来系统理解生态暴露对健康的影响，并设计出定量绿地暴露生理健康效率阈…\n\n", "42. 标题：暴露生态学：景观生态学在健康维度的范式革新（发布时间：2025-08-31 22:53:02）\n时间: 2025-08-31\n内容: 字数：8002 阅读时间：23分钟 论文信息 标题：暴露生态学：景观生态学在健康维度的范式革新 时间：2026.1 作者：余兆武，马维源，杨高原 关键词：暴露生态学；景观生态学；生态健康；范式革新；上游健康干预 导读：复旦大学环境系余兆武研究员发表理论综述论文，提出“暴露生态学”这一景观生态学在健康维度的全新范式。该研…\n\n", "43. 标题：一种建立Hormesis剂量-效应拟合模型的方法\n时间: \n内容: 专利名称：一种建立Hormesis剂量-效应拟合模型的方法  技术领域：本发明属于环境污染检测技术领域，涉及一种建立Hormesis剂量-效应拟合模型即Bilogistic模型的方法。  背景技术：在环境领域，传统毒理学研究重心在毒物的高剂量区域，其主要目的是评估毒物的毒性大小并确定对人类安全的剂量阈值。因此，传统的生…\n\n", "44. 标题：《暴露科学》了解一下！（发布时间：2020-11-08 06:00:41）\n时间: 2020-11-08\n内容: 《暴露科学》序 暴露科学是研究人与化学性、物理性、生物性污染物的接触方式和特征的有关理论和方法的学科，包括暴露浓度的测量方法、人群暴露行为模式、暴露剂量评价模型等内容。 暴露科学是环境健康科学的组成部分，是公共卫生的重要基石。最早的暴露评价可以追溯到19世纪职业安全领域的应用，20世纪七八十年代，随着人们对环境污染问题…\n\n", "45. 标题：<br>暴露于镉和铬的 cymbopogon nardus 中光合作用和氧化还原改变的剂量依赖性抑制：通过 RUBISCO 活性的证据。,International Journal of Phytoremediation\n时间: \n内容: 当前位置： X-MOL 学术 › Int. J. Phytoremediat. › 论文详情 Our official English website, www.x-mol.net, welcomes your feedback! (Note: you will need to create a separate ac…\n\n", "46. 标题：毒作用阈值和剂量\n时间: \n内容: 收藏 | 投稿 | 周宗灿 【摘要】： <正>毒理学中阈值的概念在危险评定的剂量-反应研究中有重要的意义。近年来提出了非癌终点和癌终点统一的剂量-反应关系的概念模型,有助于健康危险评定的发展。1生物学阈值指某一剂量或暴露浓度,低于此剂量或暴露浓度时所指定的生物学效应不发生。阈值是不引起生物效应的最高剂量和引起生物效应的…\n\n"]}}}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "基于"}
+data: {"type": "text", "text": "环境中", "author": "outline_agent"}
 
-data: {"type": "text", "text": "检索"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "结果"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "，"}
+data: {"type": "text", "text": "过高", "author": "outline_agent"}
 
-data: {"type": "text", "text": "我现在"}
+data: {"type": "text", "text": "影响", "author": "outline_agent"}
 
-data: {"type": "text", "text": "生成"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "关于"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": "-", "author": "outline_agent"}
 
-data: {"type": "text", "text": "地对"}
+data: {"type": "text", "text": " 目", "author": "outline_agent"}
 
-data: {"type": "text", "text": "居民"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "：", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响的"}
+data: {"type": "text", "text": "探讨", "author": "outline_agent"}
 
-data: {"type": "text", "text": "综述"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "大纲"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "：\n\n"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "#"}
+data: {"type": "text", "text": "在", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "地对"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "居民"}
+data: {"type": "text", "text": "应用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康的"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "积极"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "-", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": " 方法", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "（", "author": "outline_agent"}
 
-data: {"type": "text", "text": "、"}
+data: {"type": "text", "text": "可", "author": "outline_agent"}
 
-data: {"type": "text", "text": "量化"}
+data: {"type": "text", "text": "选", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "）", "author": "outline_agent"}
 
-data: {"type": "text", "text": "规划"}
+data: {"type": "text", "text": "：", "author": "outline_agent"}
 
-data: {"type": "text", "text": "策略"}
+data: {"type": "text", "text": "系统", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n\n"}
+data: {"type": "text", "text": "检索", "author": "outline_agent"}
 
-data: {"type": "text", "text": "##"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "文献", "author": "outline_agent"}
 
-data: {"type": "text", "text": "摘要"}
+data: {"type": "text", "text": "分析", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": "-", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " 主", "author": "outline_agent"}
 
-data: {"type": "text", "text": "背景"}
+data: {"type": "text", "text": "要", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "发现", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市化"}
+data: {"type": "text", "text": "：", "author": "outline_agent"}
 
-data: {"type": "text", "text": "加速"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "导致"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "问题"}
+data: {"type": "text", "text": "显著", "author": "outline_agent"}
 
-data: {"type": "text", "text": "凸显"}
+data: {"type": "text", "text": "降低", "author": "outline_agent"}
 
-data: {"type": "text", "text": "，"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "，", "author": "outline_agent"}
 
-data: {"type": "text", "text": "作为"}
+data: {"type": "text", "text": "提升", "author": "outline_agent"}
 
-data: {"type": "text", "text": "重要"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "干预"}
+data: {"type": "text", "text": "效率", "author": "outline_agent"}
 
-data: {"type": "text", "text": "手段"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n"}
+data: {"type": "text", "text": "-", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": " 结", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "论", "author": "outline_agent"}
 
-data: {"type": "text", "text": "目的"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "展望", "author": "outline_agent"}
 
-data: {"type": "text", "text": "系统"}
+data: {"type": "text", "text": "：", "author": "outline_agent"}
 
-data: {"type": "text", "text": "综述"}
+data: {"type": "text", "text": "明确", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "应用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理"}
+data: {"type": "text", "text": "路径", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康的"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "标准化", "author": "outline_agent"}
 
-data: {"type": "text", "text": "、"}
+data: {"type": "text", "text": "挑战", "author": "outline_agent"}
 
-data: {"type": "text", "text": "量化"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "评估"}
+data: {"type": "text", "text": "-", "author": "outline_agent"}
 
-data: {"type": "text", "text": "方法"}
+data: {"type": "text", "text": " 关", "author": "outline_agent"}
 
-data: {"type": "text", "text": "及"}
+data: {"type": "text", "text": "键", "author": "outline_agent"}
 
-data: {"type": "text", "text": "规划"}
+data: {"type": "text", "text": "词", "author": "outline_agent"}
 
-data: {"type": "text", "text": "策略"}
+data: {"type": "text", "text": "：", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n"}
+data: {"type": "text", "text": "移动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "；", "author": "outline_agent"}
 
-data: {"type": "text", "text": "方法"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "基于"}
+data: {"type": "text", "text": "；", "author": "outline_agent"}
 
-data: {"type": "text", "text": "多"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "学科"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "文献"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的系统"}
+data: {"type": "text", "text": "；", "author": "outline_agent"}
 
-data: {"type": "text", "text": "检索"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "证据"}
+data: {"type": "text", "text": "；", "author": "outline_agent"}
 
-data: {"type": "text", "text": "整合"}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "主要"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "发现"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": " 引", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "言", "author": "outline_agent"}
 
-data: {"type": "text", "text": "通过"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "多重"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "改善"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "，"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "存在"}
+data: {"type": "text", "text": " 移", "author": "outline_agent"}
 
-data: {"type": "text", "text": "剂量"}
+data: {"type": "text", "text": "动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效应"}
+data: {"type": "text", "text": "环境", "author": "outline_agent"}
 
-data: {"type": "text", "text": "关系"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "，"}
+data: {"type": "text", "text": "特性", "author": "outline_agent"}
 
-data: {"type": "text", "text": "规划"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "策略"}
+data: {"type": "text", "text": "挑战", "author": "outline_agent"}
 
-data: {"type": "text", "text": "需"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "考虑"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "公平"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "性"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " 认", "author": "outline_agent"}
 
-data: {"type": "text", "text": "结论"}
+data: {"type": "text", "text": "知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "展望"}
+data: {"type": "text", "text": "理论", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "概述", "author": "outline_agent"}
 
-data: {"type": "text", "text": "需"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "建立"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "标准化"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "评估"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "体系"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "，"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "推动"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "基于"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "证据"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的"}
+data: {"type": "text", "text": "在", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "教育", "author": "outline_agent"}
 
-data: {"type": "text", "text": "规划"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n"}
+data: {"type": "text", "text": "作用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "关键词"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": " 认", "author": "outline_agent"}
 
-data: {"type": "text", "text": "；"}
+data: {"type": "text", "text": "知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "；"}
+data: {"type": "text", "text": "理论", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "研究"}
+data: {"type": "text", "text": "移动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "；"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "量化"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "评估"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "；"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "规划"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "策略"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "；"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "环境"}
+data: {"type": "text", "text": " 认", "author": "outline_agent"}
 
-data: {"type": "text", "text": "公平"}
+data: {"type": "text", "text": "知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "\n\n"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "##"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "构成", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "分类", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "引言"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "刘"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "红"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "晓"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": " 移", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]),"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "环境", "author": "outline_agent"}
 
-data: {"type": "text", "text": "余"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "兆"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "武"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "影响", "author": "outline_agent"}
 
-data: {"type": "text", "text": "13"}
+data: {"type": "text", "text": "因素", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " 认", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市化"}
+data: {"type": "text", "text": "知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "进程"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "对", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "挑战"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "现状"}
+data: {"type": "text", "text": "量化", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "影响", "author": "outline_agent"}
 
-data: {"type": "text", "text": "你"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "生活"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的地方"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "树"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "多"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "吗"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "5"}
+data: {"type": "text", "text": "的应用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "作为"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "分类", "author": "outline_agent"}
 
-data: {"type": "text", "text": "干预"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "手段"}
+data: {"type": "text", "text": "定义", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的理论"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "基础"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "地对"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "公共"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的影响"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "在", "author": "outline_agent"}
 
-data: {"type": "text", "text": "研究"}
+data: {"type": "text", "text": "移动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "10"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "应用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "方法", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "研究"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "目标"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "课程", "author": "outline_agent"}
 
-data: {"type": "text", "text": "综述"}
+data: {"type": "text", "text": "设计", "author": "outline_agent"}
 
-data: {"type": "text", "text": "框架"}
+data: {"type": "text", "text": "中", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "斯坦"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "福"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "领"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "衔"}
+data: {"type": "text", "text": "整合", "author": "outline_agent"}
 
-data: {"type": "text", "text": "全球"}
+data: {"type": "text", "text": "案例", "author": "outline_agent"}
 
-data: {"type": "text", "text": "荟"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "萃"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "研究"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "4", "author": "outline_agent"}
 
-data: {"type": "text", "text": "11"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n\n"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "##"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "对", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康的"}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "理论基础"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "评估"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "指标"}
+data: {"type": "text", "text": "4", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "单"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "靠"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿色"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "空间"}
+data: {"type": "text", "text": "降低", "author": "outline_agent"}
 
-data: {"type": "text", "text": "是不够"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "4"}
+data: {"type": "text", "text": "机制", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "4", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的多"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "维度"}
+data: {"type": "text", "text": "在", "author": "outline_agent"}
 
-data: {"type": "text", "text": "概念"}
+data: {"type": "text", "text": "多", "author": "outline_agent"}
 
-data: {"type": "text", "text": "框架"}
+data: {"type": "text", "text": "模", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "态", "author": "outline_agent"}
 
-data: {"type": "text", "text": "K"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "essler"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "6"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "困扰"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "量表"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "4", "author": "outline_agent"}
 
-data: {"type": "text", "text": "4"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "对", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "效率", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "的影响", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "评估", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康的"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "理论"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "5", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "注意力"}
+data: {"type": "text", "text": " 移", "author": "outline_agent"}
 
-data: {"type": "text", "text": "恢复"}
+data: {"type": "text", "text": "动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "压力"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "减少"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "测试"}
+data: {"type": "text", "text": "评估", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿色"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "环境"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "对"}
+data: {"type": "text", "text": "5", "author": "outline_agent"}
 
-data: {"type": "text", "text": "缓解"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "压力的"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": " 多", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "模", "author": "outline_agent"}
 
-data: {"type": "text", "text": "26"}
+data: {"type": "text", "text": "态", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "数据", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "评估", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "的认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "模型", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "量化"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "评估"}
+data: {"type": "text", "text": "5", "author": "outline_agent"}
 
-data: {"type": "text", "text": "方法与"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "指标体系"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": " 认", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "光"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "环境"}
+data: {"type": "text", "text": "评估", "author": "outline_agent"}
 
-data: {"type": "text", "text": "对"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "情绪"}
+data: {"type": "text", "text": "量化", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "指标", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的多"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "模态"}
+data: {"type": "text", "text": "方法", "author": "outline_agent"}
 
-data: {"type": "text", "text": "研究"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "17"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n\n"}
+data: {"type": "text", "text": "5", "author": "outline_agent"}
 
-data: {"type": "text", "text": "##"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": " 移", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "动", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "平台", "author": "outline_agent"}
 
-data: {"type": "text", "text": "暴露"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的心理"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效益"}
+data: {"type": "text", "text": "监测", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "技术", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "自然"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "暴露"}
+data: {"type": "text", "text": "6", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "自然"}
+data: {"type": "text", "text": " 学", "author": "outline_agent"}
 
-data: {"type": "text", "text": "联结"}
+data: {"type": "text", "text": "习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "度"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "6"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "整合", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "生理"}
+data: {"type": "text", "text": "6", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "皮质"}
+data: {"type": "text", "text": " 认", "author": "outline_agent"}
 
-data: {"type": "text", "text": "醇"}
+data: {"type": "text", "text": "知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "水平"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "降低"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "自主"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "神经"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "调节"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "协同", "author": "outline_agent"}
 
-data: {"type": "text", "text": "测试"}
+data: {"type": "text", "text": "作用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿色"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "环境"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "对"}
+data: {"type": "text", "text": "6", "author": "outline_agent"}
 
-data: {"type": "text", "text": "缓解"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "压力的"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": " 资", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "源", "author": "outline_agent"}
 
-data: {"type": "text", "text": "26"}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "整合", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理"}
+data: {"type": "text", "text": "实践", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "注意力"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "恢复"}
+data: {"type": "text", "text": "6", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "情绪"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "调节"}
+data: {"type": "text", "text": " 学", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "情绪"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的色彩"}
+data: {"type": "text", "text": "对", "author": "outline_agent"}
 
-data: {"type": "text", "text": "疗"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "愈"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "27"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "综合", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "影响", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "7", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "社会"}
+data: {"type": "text", "text": " 教", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "学", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": "实践", "author": "outline_agent"}
 
-data: {"type": "text", "text": "促进"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "社会"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "交往"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "社区"}
+data: {"type": "text", "text": "应用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "凝聚力"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "蓝"}
+data: {"type": "text", "text": "7", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "空间"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "对"}
+data: {"type": "text", "text": " 大", "author": "outline_agent"}
 
-data: {"type": "text", "text": "老年"}
+data: {"type": "text", "text": "学", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "英语", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "移动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "9"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n\n"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "##"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "案例", "author": "outline_agent"}
 
-data: {"type": "text", "text": "4"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "剂量"}
+data: {"type": "text", "text": "7", "author": "outline_agent"}
 
-data: {"type": "text", "text": "-"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效应"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "关系"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "暴露"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "阈值"}
+data: {"type": "text", "text": "在", "author": "outline_agent"}
 
-data: {"type": "text", "text": "研究"}
+data: {"type": "text", "text": "教学", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "设计", "author": "outline_agent"}
 
-data: {"type": "text", "text": "余"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "兆"}
+data: {"type": "text", "text": "具体", "author": "outline_agent"}
 
-data: {"type": "text", "text": "武"}
+data: {"type": "text", "text": "应用", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "13"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]),"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "7", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "有益"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康"}
+data: {"type": "text", "text": " 师", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "生", "author": "outline_agent"}
 
-data: {"type": "text", "text": "13"}
+data: {"type": "text", "text": "互动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "4"}
+data: {"type": "text", "text": "监控", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "改进", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "暴露"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "时间"}
+data: {"type": "text", "text": "8", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": " 学", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效益"}
+data: {"type": "text", "text": "习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "量化"}
+data: {"type": "text", "text": "的有效", "author": "outline_agent"}
 
-data: {"type": "text", "text": "关系"}
+data: {"type": "text", "text": "性", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "评估", "author": "outline_agent"}
 
-data: {"type": "text", "text": "量化"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "暴露"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "生理"}
+data: {"type": "text", "text": "8", "author": "outline_agent"}
 
-data: {"type": "text", "text": "健康"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效益"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "阈值"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效应"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "对", "author": "outline_agent"}
 
-data: {"type": "text", "text": "39"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "提升", "author": "outline_agent"}
 
-data: {"type": "text", "text": "4"}
+data: {"type": "text", "text": "证据", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "不同类型"}
+data: {"type": "text", "text": "8", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "地的"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效益"}
+data: {"type": "text", "text": " 实", "author": "outline_agent"}
 
-data: {"type": "text", "text": "差异"}
+data: {"type": "text", "text": "施", "author": "outline_agent"}
 
-data: {"type": "text", "text": "比较"}
+data: {"type": "text", "text": "元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "公园"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "和"}
+data: {"type": "text", "text": "长期", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "效果", "author": "outline_agent"}
 
-data: {"type": "text", "text": "林地"}
+data: {"type": "text", "text": "分析", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "26"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "8", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "4"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "最优"}
+data: {"type": "text", "text": "在", "author": "outline_agent"}
 
-data: {"type": "text", "text": "暴露"}
+data: {"type": "text", "text": "不同", "author": "outline_agent"}
 
-data: {"type": "text", "text": "剂量"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "群体", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效率"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "阈值"}
+data: {"type": "text", "text": "差异", "author": "outline_agent"}
 
-data: {"type": "text", "text": "模型"}
+data: {"type": "text", "text": "性", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "表现", "author": "outline_agent"}
 
-data: {"type": "text", "text": "暴露"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "生态"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": "学"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "理论"}
+data: {"type": "text", "text": "9", "author": "outline_agent"}
 
-data: {"type": "text", "text": "框架"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": " 移", "author": "outline_agent"}
 
-data: {"type": "text", "text": "42"}
+data: {"type": "text", "text": "动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n\n"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "##"}
+data: {"type": "text", "text": "平台", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "的设计", "author": "outline_agent"}
 
-data: {"type": "text", "text": "5"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "优化", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "不同"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "人群"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的"}
+data: {"type": "text", "text": "9", "author": "outline_agent"}
 
-data: {"type": "text", "text": "差异化"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "优化", "author": "outline_agent"}
 
-data: {"type": "text", "text": "蓝"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": "路径", "author": "outline_agent"}
 
-data: {"type": "text", "text": "空间"}
+data: {"type": "text", "text": "以", "author": "outline_agent"}
 
-data: {"type": "text", "text": "对"}
+data: {"type": "text", "text": "降低", "author": "outline_agent"}
 
-data: {"type": "text", "text": "老年"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "9"}
+data: {"type": "text", "text": "9", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " 认", "author": "outline_agent"}
 
-data: {"type": "text", "text": "5"}
+data: {"type": "text", "text": "知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "1"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "用户体验", "author": "outline_agent"}
 
-data: {"type": "text", "text": "老年"}
+data: {"type": "text", "text": "的设计", "author": "outline_agent"}
 
-data: {"type": "text", "text": "人群"}
+data: {"type": "text", "text": "原则", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的特殊"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "需求"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效益"}
+data: {"type": "text", "text": "9", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "蓝"}
+data: {"type": "text", "text": " 移", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": "动", "author": "outline_agent"}
 
-data: {"type": "text", "text": "空间"}
+data: {"type": "text", "text": "学习", "author": "outline_agent"}
 
-data: {"type": "text", "text": "对"}
+data: {"type": "text", "text": "内容", "author": "outline_agent"}
 
-data: {"type": "text", "text": "老年"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "心理健康"}
+data: {"type": "text", "text": "结构", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "化", "author": "outline_agent"}
 
-data: {"type": "text", "text": "机制"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "个性化", "author": "outline_agent"}
 
-data: {"type": "text", "text": "9"}
+data: {"type": "text", "text": "设计", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "\n\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "##", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "5"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "0", "author": "outline_agent"}
 
-data: {"type": "text", "text": "2"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " 教", "author": "outline_agent"}
 
-data: {"type": "text", "text": "学生"}
+data: {"type": "text", "text": "育", "author": "outline_agent"}
 
-data: {"type": "text", "text": "群体的"}
+data: {"type": "text", "text": "技术", "author": "outline_agent"}
 
-data: {"type": "text", "text": "压力"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "缓解"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "与"}
+data: {"type": "text", "text": "科学", "author": "outline_agent"}
 
-data: {"type": "text", "text": "学习"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "效能"}
+data: {"type": "text", "text": "融合", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "育"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "见"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "光"}
+data: {"type": "text", "text": "0", "author": "outline_agent"}
 
-data: {"type": "text", "text": "："}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "以"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "植物"}
+data: {"type": "text", "text": " 教", "author": "outline_agent"}
 
-data: {"type": "text", "text": "为师"}
+data: {"type": "text", "text": "育", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "技术", "author": "outline_agent"}
 
-data: {"type": "text", "text": "21"}
+data: {"type": "text", "text": "对", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n"}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "###"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "5"}
+data: {"type": "text", "text": "的支持", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "3"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "职业"}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "人群"}
+data: {"type": "text", "text": "0", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的工作"}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": "压力"}
+data: {"type": "text", "text": "2", "author": "outline_agent"}
 
-data: {"type": "text", "text": "恢复"}
+data: {"type": "text", "text": " 元", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "快"}
+data: {"type": "text", "text": "策略", "author": "outline_agent"}
 
-data: {"type": "text", "text": "节奏"}
+data: {"type": "text", "text": "与", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的生活"}
+data: {"type": "text", "text": "教育", "author": "outline_agent"}
 
-data: {"type": "text", "text": "和高"}
+data: {"type": "text", "text": "技术", "author": "outline_agent"}
 
-data: {"type": "text", "text": "强度"}
+data: {"type": "text", "text": "的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的工作"}
+data: {"type": "text", "text": "结合", "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
+data: {"type": "text", "text": "路径", "author": "outline_agent"}
 
-data: {"type": "text", "text": "8"}
+data: {"type": "text", "text": "\n", "author": "outline_agent"}
 
-data: {"type": "text", "text": "])\n\n"}
+data: {"type": "text", "text": "###", "author": "outline_agent"}
 
-data: {"type": "text", "text": "##"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "1", "author": "outline_agent"}
 
-data: {"type": "text", "text": "6"}
+data: {"type": "text", "text": "0", "author": "outline_agent"}
 
-data: {"type": "text", "text": "."}
+data: {"type": "text", "text": ".", "author": "outline_agent"}
 
-data: {"type": "text", "text": " "}
+data: {"type": "text", "text": "3", "author": "outline_agent"}
 
-data: {"type": "text", "text": "多"}
+data: {"type": "text", "text": " ", "author": "outline_agent"}
 
-data: {"type": "text", "text": "感官"}
+data: {"type": "text", "text": "未来", "author": "outline_agent"}
 
-data: {"type": "text", "text": "体验"}
+data: {"type": "text", "text": "教育", "author": "outline_agent"}
 
-data: {"type": "text", "text": "的综合"}
+data: {"type": "text", "text": "技术", "author": "outline_agent"}
 
-data: {"type": "text", "text": "影响"}
+data: {"type": "text", "text": "在", "author": "outline_agent"}
 
-data: {"type": "text", "text": "(["}
+data: {"type": "text", "text": "认知", "author": "outline_agent"}
 
-data: {"type": "text", "text": "城市"}
+data: {"type": "text", "text": "负荷", "author": "outline_agent"}
 
-data: {"type": "text", "text": "绿地"}
+data: {"type": "text", "text": "管理", "author": "outline_agent"}
 
-data: {"type": "text", "text": "梅花"}
+data: {"type": "text", "text": "中的", "author": "outline_agent"}
 
-data: {"type": "text", "text": "听"}
+data: {"type": "text", "text": "发展方向", "author": "outline_agent"}
 
-data: {"type": "text", "text": "嗅"}
+data: {"type": "artifact", "text": "# 移动学习环境下的认知负荷管理：基于元认知策略的应用与效果评估\n\n## 摘要\n- 背景：移动学习环境中认知负荷过高影响学习效果\n- 目的：探讨元认知策略在管理认知负荷中的应用与效果\n- 方法（可选）：系统检索与文献分析\n- 主要发现：元认知策略显著降低认知负荷，提升学习效率\n- 结论与展望：明确策略应用路径与标准化挑战\n- 关键词：移动学习；认知负荷；元认知策略；学习效果；管理\n\n## 1. 引言\n### 1.1 移动学习环境的特性与挑战\n### 1.2 认知负荷理论概述\n### 1.3 元认知策略在教育中的作用\n\n## 2. 认知负荷理论与移动学习\n### 2.1 认知负荷的构成与分类\n### 2.2 移动学习环境中的认知负荷影响因素\n### 2.3 认知负荷对学习效果的量化影响\n\n## 3. 元认知策略的应用\n### 3.1 元认知策略的分类与定义\n### 3.2 元认知策略在移动学习中的应用方法\n### 3.3 课程设计中元认知策略的整合案例\n\n## 4. 元认知策略对认知负荷的管理\n### 4.1 元认知策略降低认知负荷的机制\n### 4.2 元认知策略在多模态学习中的管理效果\n### 4.3 元认知策略对学习效率的影响评估\n\n## 5. 移动学习中的认知负荷评估\n### 5.1 多模态数据评估的认知负荷模型\n### 5.2 认知负荷评估的量化指标与方法\n### 5.3 移动学习平台中的认知负荷监测技术\n\n## 6. 学习策略与元认知策略的整合\n### 6.1 认知策略与元认知策略的协同作用\n### 6.2 资源管理策略与元认知策略的整合实践\n### 6.3 学习策略对认知负荷管理的综合影响\n\n## 7. 教学实践中的元认知策略应用\n### 7.1 大学英语移动学习中的元认知策略案例\n### 7.2 元认知策略在教学设计中的具体应用\n### 7.3 师生互动中的元认知监控改进\n\n## 8. 学习策略的有效性评估\n### 8.1 元认知策略对学习效果的提升证据\n### 8.2 实施元认知策略的长期效果分析\n### 8.3 元认知策略在不同学习群体中的差异性表现\n\n## 9. 移动学习平台的设计与优化\n### 9.1 优化学习路径以降低认知负荷\n### 9.2 认知负荷与用户体验的设计原则\n### 9.3 移动学习内容的结构化与个性化设计\n\n## 10. 教育技术与认知科学的融合\n### 10.1 教育技术对认知负荷管理的支持\n### 10.2 元认知策略与教育技术的结合路径\n### 10.3 未来教育技术在认知负荷管理中的发展方向", "author": "outline_agent"}
 
-data: {"type": "text", "text": "刺激"}
+data: {"type": "metadata", "metadata": {"author": "outline_agent", "references": {"76b9a6595e59e19b": {"idx_val": 1, "file_id": "76b9a6595e59e19b", "title": "BNU-SLI系列学术活动——智慧学习环境中的认知负荷问题-智慧学习研究院（发布时间：2016-11-12 15:59:00）", "publish_time": "2016-11-12", "snippet": "11月11日下午，研究院此次学术活动邀请了高级研究员高媛博士为我们分享了认知负荷的相关理论知识，带领同学们深入到科研设计的领地，探讨教育技术的应用策略，为同学们拓宽了认知负荷的理论视野。 高媛博士 高媛博士从人脑认知历程模型讲起，告诉我们外部信息是通过视、听觉等感官进入人的感觉记忆，提高个体注意力后可形成短暂的工作记忆…", "url": "https://sli.bnu.edu.cn/a/xinwenkuaibao/yanjiudongtai/20161117/217.html"}, "bd4e2f92ff9eb235": {"idx_val": 2, "file_id": "bd4e2f92ff9eb235", "title": "元认知策略  MBA智库百科", "publish_time": "", "snippet": "出自 MBA智库百科( https://wiki.mbalib.com/ ) 元认知策略(Meta-cognitive Strategies) 目录 编辑 ] 什么是元认知策略 所谓元认知策略是指控制信息的流程，监控和指导认知过程进行的策略。元认知策略是利用认知过程中获得的知识，通过确立学习目标与计划，监控学习过程和评…", "url": "https://wiki.mbalib.com/wiki/%25E5%2585%2583%25E8%25AE%25A4%25E7%259F%25A5%25E7%25AD%2596%25E7%2595%25A5?spm=0.0.0.0.fWuPTJ"}, "70d2640b8c5bd8f2": {"idx_val": 3, "file_id": "70d2640b8c5bd8f2", "title": "学生的学习发展—学习策略（第44期）", "publish_time": "", "snippet": "(一)概述学习策略是指学习者在学习活动中，为了达到有效的学习目的而采用的规则、方法、技巧及其调控方式的综合。(二)分类根据迈克尔等人在1990年的分类，可将学习策略分为三种：认知策略、元认知策略和资源管理策略。1.认知策略(1)复述策略:利用无意识记和有意识记；排除抑制干扰；整体记忆与分段记忆；多种感官参与；画线、圈点…", "url": "http://mp.weixin.qq.com/s?__biz=MzU3MjE5MTE5MA==&mid=2247537105&idx=2&sn=9d7123f4e03cd25c79127a342ef41de3"}, "df3dd74267bcce80": {"idx_val": 4, "file_id": "df3dd74267bcce80", "title": "2011年小学教育心理学考试大纲讲解：学习策略（发布时间：2022-03-01 19:30:00）", "publish_time": "2022-03-01", "snippet": "第八章 学习策略 第一节 典型的学习策略 学习策略是指学习者为了提高学习的效果和效率，有目的有意识地制定的有关学习过程的复杂的方案。 一般来说，学习策略可分为认知策略、元认知策略和资源管理策略三种。 一、认知策略 (一)复述策略 复述策略是在工作记忆中为了保持信息，运用内部语言在大脑中重现学习材料或刺激，以便将注意力维…", "url": "https://www.233.com/teacher/xinlixue/xiaoxue/20101213/091346506.html"}, "83c1a0974359bff0": {"idx_val": 5, "file_id": "83c1a0974359bff0", "title": "基于多模态数据的在线学习认知负荷评估-现代教育技术2024年03期-手机知网", "publish_time": "", "snippet": "基于多模态数据的在线学习认知负荷评估 华东师范大学教育信息技术学系; 华东师范大学上海数字化教育装备工程技术研究中心 | 薛耀锋 王坤 邱奕盛 朱芳清 开通知网号 近年来，认知负荷过载成为影响在线学习效果的一个重要因素。为解决此问题，文章聚焦在线学习认知负荷评估，首先设计了基于多模态数据的在线学习认知负荷评估研究框架，…", "url": "https://wap.cnki.net/touch/web/Journal/Article/XJJS202403008.html"}, "2b5a8125db726fb8": {"idx_val": 6, "file_id": "2b5a8125db726fb8", "title": "教师招聘常考考点之元认知的结构（发布时间：2021-02-25 21:33:19）", "publish_time": "2021-02-25", "snippet": "一、知识解析 在教招考试中，每次提到“元认知”，我们总是会感到似曾相识，但又很陌生。今天我们就专门来学习下元认知的结构。这部分知识属于陈琦、刘儒德当代教育心理学一书中第四部分分类学习心理第十二章学习策略的内容。本部分知识主要是以客观题的形式考查，偏向于理解。 在学习的信息加工系统中，存在着一个对信息流动的执行控制过程，…", "url": "http://m.offcn.com/jiaoshi/2021/0225/429140.html"}, "2e66ee7aef0279f6": {"idx_val": 7, "file_id": "2e66ee7aef0279f6", "title": "如何理解学习策略", "publish_time": "", "snippet": "学习策略是指学习者为了提高学习的效果和效率，有目的，有意识地制订的有关学习过程的复杂方案，其包括认知策略，元认知策略，资源管理策略。那我们如何理解学习策略呢？$P$(I_M_G)1认知策略包括复述策略（重复，抄写，做记录，画线），精细加工策略（想象，口述，总结，做笔记，类比，质疑）组织策略（组块，选择重点，列提纲，画地…", "url": "https://jingyan.baidu.com/album/93f9803fcfadd9a1e46f55bf.html"}, "ff9a3286b5530539": {"idx_val": 8, "file_id": "ff9a3286b5530539", "title": "如何理解元认知策略", "publish_time": "", "snippet": "元认知是对自身认知的认知，元认知包括元认知知识、元认知体验和元认知监控三个方面，那么如何理解元认知策略呢？$P$(I_M_G)1元认知策略是学生对自己认知过程的认知策略，包括对自己认知过程的了解和控制策略$P$(I_M_G)2计划策略是根据认知活动的特定目标，在一项认知活动之前计划各种活动、预计结果、选择策略、想出各种…", "url": "https://jingyan.baidu.com/album/ed15cb1b01a4355ae269813f.html"}, "34a375ea935252dc": {"idx_val": 9, "file_id": "34a375ea935252dc", "title": "基于微信的大学英语移动学习效果探析", "publish_time": "", "snippet": "《西部素质教育》 作者本人免费下载 | 收藏 | 投稿 | 胡瑞娟 开通知网号 【摘要】：为了更好地提高教学效率,收获良好的教习效果,文章对微信中大学英语移动学习策略进行了研究,探讨微信如何从认知策略、元认知策略、资源管理等方面提升大学英语学习效果,并结合具体案例进行了详细分析。 下载全文 更多同类文献 个人查重>> …", "url": "https://www.cnki.com.cn/Article/CJFDTOTAL-XBSJ201708133.htm"}, "71a105f5ff4d1db6": {"idx_val": 10, "file_id": "71a105f5ff4d1db6", "title": "学习策略（发布时间：2024-03-20 03:31:20）", "publish_time": "2024-03-20", "snippet": "一、学习策略的界定学习策略是指学习者为了提高学习的效果和效率，有目的、有意识订的有关学习过程的复杂的方案。二、学习策略的分类(一)认知策略是加工信息的一些方法和技术。1.复述策略\t2.精细加工策略\t3.组织策略\t(二)元认知策略是指控制信息的流程，监控和指导认知过程进行的策略。1.计划策略\t2.监控策略\t3.调节策略\t…", "url": "https://zhuanlan.zhihu.com/p/687764256"}}}, "author": "outline_agent"}
 
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "8"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "6"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "1"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "视觉"}
-
-data: {"type": "text", "text": "绿"}
-
-data: {"type": "text", "text": "化的"}
-
-data: {"type": "text", "text": "情绪"}
-
-data: {"type": "text", "text": "调节"}
-
-data: {"type": "text", "text": "作用"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "凝视"}
-
-data: {"type": "text", "text": "绿色"}
-
-data: {"type": "text", "text": "场景"}
-
-data: {"type": "text", "text": "10"}
-
-data: {"type": "text", "text": "分钟"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "23"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "6"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "2"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "听觉"}
-
-data: {"type": "text", "text": "自然"}
-
-data: {"type": "text", "text": "声音"}
-
-data: {"type": "text", "text": "的压力"}
-
-data: {"type": "text", "text": "缓解"}
-
-data: {"type": "text", "text": "效果"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "梅花"}
-
-data: {"type": "text", "text": "听"}
-
-data: {"type": "text", "text": "嗅"}
-
-data: {"type": "text", "text": "刺激"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "8"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "6"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "3"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "嗅觉"}
-
-data: {"type": "text", "text": "植物"}
-
-data: {"type": "text", "text": "芳香"}
-
-data: {"type": "text", "text": "的情绪"}
-
-data: {"type": "text", "text": "改善"}
-
-data: {"type": "text", "text": "机制"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "梅花"}
-
-data: {"type": "text", "text": "听"}
-
-data: {"type": "text", "text": "嗅"}
-
-data: {"type": "text", "text": "刺激"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "8"}
-
-data: {"type": "text", "text": "])\n\n"}
-
-data: {"type": "text", "text": "##"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "7"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "量化"}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "方法与"}
-
-data: {"type": "text", "text": "技术"}
-
-data: {"type": "text", "text": "进展"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "光"}
-
-data: {"type": "text", "text": "环境"}
-
-data: {"type": "text", "text": "对"}
-
-data: {"type": "text", "text": "情绪"}
-
-data: {"type": "text", "text": "影响"}
-
-data: {"type": "text", "text": "的多"}
-
-data: {"type": "text", "text": "模态"}
-
-data: {"type": "text", "text": "研究"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "17"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "7"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "1"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "生理"}
-
-data: {"type": "text", "text": "指标"}
-
-data: {"type": "text", "text": "监测"}
-
-data: {"type": "text", "text": "技术的"}
-
-data: {"type": "text", "text": "应用"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "可"}
-
-data: {"type": "text", "text": "穿戴"}
-
-data: {"type": "text", "text": "生理"}
-
-data: {"type": "text", "text": "传感器"}
-
-data: {"type": "text", "text": "技术"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "17"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "7"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "2"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "心理"}
-
-data: {"type": "text", "text": "量表"}
-
-data: {"type": "text", "text": "与"}
-
-data: {"type": "text", "text": "行为"}
-
-data: {"type": "text", "text": "观察"}
-
-data: {"type": "text", "text": "的结合"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "面部"}
-
-data: {"type": "text", "text": "表情"}
-
-data: {"type": "text", "text": "与"}
-
-data: {"type": "text", "text": "自我"}
-
-data: {"type": "text", "text": "报告"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "17"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "7"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "3"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "地理"}
-
-data: {"type": "text", "text": "信息系统"}
-
-data: {"type": "text", "text": "在"}
-
-data: {"type": "text", "text": "空间"}
-
-data: {"type": "text", "text": "分析"}
-
-data: {"type": "text", "text": "中的应用"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "Sol"}
-
-data: {"type": "text", "text": "V"}
-
-data: {"type": "text", "text": "ES"}
-
-data: {"type": "text", "text": "模型"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "38"}
-
-data: {"type": "text", "text": "])\n\n"}
-
-data: {"type": "text", "text": "##"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "8"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "规划"}
-
-data: {"type": "text", "text": "策略"}
-
-data: {"type": "text", "text": "与"}
-
-data: {"type": "text", "text": "设计"}
-
-data: {"type": "text", "text": "实践"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "将"}
-
-data: {"type": "text", "text": "用户的"}
-
-data: {"type": "text", "text": "适应"}
-
-data: {"type": "text", "text": "行为"}
-
-data: {"type": "text", "text": "纳入"}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "规划"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "14"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "8"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "1"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "基于"}
-
-data: {"type": "text", "text": "心理健康"}
-
-data: {"type": "text", "text": "效益"}
-
-data: {"type": "text", "text": "的"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "布局"}
-
-data: {"type": "text", "text": "优化"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "居住"}
-
-data: {"type": "text", "text": "区内"}
-
-data: {"type": "text", "text": "的小"}
-
-data: {"type": "text", "text": "微"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "12"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "8"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "2"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "多"}
-
-data: {"type": "text", "text": "功能"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "空间"}
-
-data: {"type": "text", "text": "的设计"}
-
-data: {"type": "text", "text": "原则"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "集"}
-
-data: {"type": "text", "text": "低碳"}
-
-data: {"type": "text", "text": "环保"}
-
-data: {"type": "text", "text": "知识"}
-
-data: {"type": "text", "text": "宣"}
-
-data: {"type": "text", "text": "导"}
-
-data: {"type": "text", "text": "、"}
-
-data: {"type": "text", "text": "情绪"}
-
-data: {"type": "text", "text": "压力"}
-
-data: {"type": "text", "text": "舒缓"}
-
-data: {"type": "text", "text": "调节"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "24"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "8"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "3"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "社区"}
-
-data: {"type": "text", "text": "级"}
-
-data: {"type": "text", "text": "绿"}
-
-data: {"type": "text", "text": "地的"}
-
-data: {"type": "text", "text": "可达"}
-
-data: {"type": "text", "text": "性与"}
-
-data: {"type": "text", "text": "使用"}
-
-data: {"type": "text", "text": "效率"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "居住"}
-
-data: {"type": "text", "text": "区"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "作为"}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "居民"}
-
-data: {"type": "text", "text": "接触"}
-
-data: {"type": "text", "text": "频率"}
-
-data: {"type": "text", "text": "较高的"}
-
-data: {"type": "text", "text": "类型"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "12"}
-
-data: {"type": "text", "text": "])\n\n"}
-
-data: {"type": "text", "text": "##"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "9"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "环境"}
-
-data: {"type": "text", "text": "公平"}
-
-data: {"type": "text", "text": "与社会"}
-
-data: {"type": "text", "text": "正义"}
-
-data: {"type": "text", "text": "考量"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "不平等"}
-
-data: {"type": "text", "text": "以"}
-
-data: {"type": "text", "text": "促进"}
-
-data: {"type": "text", "text": "分配"}
-
-data: {"type": "text", "text": "公正"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "15"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "9"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "1"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "分布"}
-
-data: {"type": "text", "text": "的空间"}
-
-data: {"type": "text", "text": "不平等"}
-
-data: {"type": "text", "text": "问题"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "不平等"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "15"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "9"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "2"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "弱势"}
-
-data: {"type": "text", "text": "群体的"}
-
-data: {"type": "text", "text": "绿地"}
-
-data: {"type": "text", "text": "可达"}
-
-data: {"type": "text", "text": "性"}
-
-data: {"type": "text", "text": "差异"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "环境"}
-
-data: {"type": "text", "text": "不公平"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "33"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "9"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "3"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "促进"}
-
-data: {"type": "text", "text": "公平"}
-
-data: {"type": "text", "text": "的"}
-
-data: {"type": "text", "text": "规划"}
-
-data: {"type": "text", "text": "干预"}
-
-data: {"type": "text", "text": "策略"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "优化"}
-
-data: {"type": "text", "text": "生态"}
-
-data: {"type": "text", "text": "补偿"}
-
-data: {"type": "text", "text": "以"}
-
-data: {"type": "text", "text": "缓解"}
-
-data: {"type": "text", "text": "环境"}
-
-data: {"type": "text", "text": "不公平"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "33"}
-
-data: {"type": "text", "text": "])\n\n"}
-
-data: {"type": "text", "text": "##"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "10"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "生态系统"}
-
-data: {"type": "text", "text": "服务"}
-
-data: {"type": "text", "text": "价值"}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "生态系统"}
-
-data: {"type": "text", "text": "服务"}
-
-data: {"type": "text", "text": "的社会"}
-
-data: {"type": "text", "text": "价值"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "36"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "10"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "1"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "心理健康"}
-
-data: {"type": "text", "text": "效益"}
-
-data: {"type": "text", "text": "的经济"}
-
-data: {"type": "text", "text": "价值"}
-
-data: {"type": "text", "text": "量化"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "生态系统"}
-
-data: {"type": "text", "text": "服务"}
-
-data: {"type": "text", "text": "价值"}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "35"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "10"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "2"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "社会"}
-
-data: {"type": "text", "text": "文化"}
-
-data: {"type": "text", "text": "价值的"}
-
-data: {"type": "text", "text": "综合评价"}
-
-data: {"type": "text", "text": "方法"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "Sol"}
-
-data: {"type": "text", "text": "V"}
-
-data: {"type": "text", "text": "ES"}
-
-data: {"type": "text", "text": "模型"}
-
-data: {"type": "text", "text": "的社会"}
-
-data: {"type": "text", "text": "价值"}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "38"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "10"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "3"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "成本"}
-
-data: {"type": "text", "text": "效益"}
-
-data: {"type": "text", "text": "分析与"}
-
-data: {"type": "text", "text": "政策"}
-
-data: {"type": "text", "text": "支持"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "为什么要"}
-
-data: {"type": "text", "text": "开展"}
-
-data: {"type": "text", "text": "生态系统"}
-
-data: {"type": "text", "text": "服务"}
-
-data: {"type": "text", "text": "价值"}
-
-data: {"type": "text", "text": "评估"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "32"}
-
-data: {"type": "text", "text": "])\n\n"}
-
-data: {"type": "text", "text": "##"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "11"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "研究"}
-
-data: {"type": "text", "text": "挑战"}
-
-data: {"type": "text", "text": "与"}
-
-data: {"type": "text", "text": "未来"}
-
-data: {"type": "text", "text": "方向"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "暴露"}
-
-data: {"type": "text", "text": "生态"}
-
-data: {"type": "text", "text": "学"}
-
-data: {"type": "text", "text": "："}
-
-data: {"type": "text", "text": "景观"}
-
-data: {"type": "text", "text": "生态"}
-
-data: {"type": "text", "text": "学"}
-
-data: {"type": "text", "text": "在"}
-
-data: {"type": "text", "text": "健康"}
-
-data: {"type": "text", "text": "维"}
-
-data: {"type": "text", "text": "度的"}
-
-data: {"type": "text", "text": "范式"}
-
-data: {"type": "text", "text": "革新"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "42"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "11"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "1"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "方法"}
-
-data: {"type": "text", "text": "学"}
-
-data: {"type": "text", "text": "标准化"}
-
-data: {"type": "text", "text": "与"}
-
-data: {"type": "text", "text": "证据"}
-
-data: {"type": "text", "text": "质量"}
-
-data: {"type": "text", "text": "提升"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "我国"}
-
-data: {"type": "text", "text": "城市"}
-
-data: {"type": "text", "text": "的相关"}
-
-data: {"type": "text", "text": "证据"}
-
-data: {"type": "text", "text": "仍"}
-
-data: {"type": "text", "text": "较少"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "3"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "11"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "2"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "长期"}
-
-data: {"type": "text", "text": "效应"}
-
-data: {"type": "text", "text": "与"}
-
-data: {"type": "text", "text": "因果"}
-
-data: {"type": "text", "text": "机制的"}
-
-data: {"type": "text", "text": "深入"}
-
-data: {"type": "text", "text": "探索"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "基于"}
-
-data: {"type": "text", "text": "准"}
-
-data: {"type": "text", "text": "自然"}
-
-data: {"type": "text", "text": "实验"}
-
-data: {"type": "text", "text": "方法的"}
-
-data: {"type": "text", "text": "因果"}
-
-data: {"type": "text", "text": "机制"}
-
-data: {"type": "text", "text": "研究"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "1"}
-
-data: {"type": "text", "text": "])\n"}
-
-data: {"type": "text", "text": "###"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "11"}
-
-data: {"type": "text", "text": "."}
-
-data: {"type": "text", "text": "3"}
-
-data: {"type": "text", "text": " "}
-
-data: {"type": "text", "text": "多"}
-
-data: {"type": "text", "text": "学科"}
-
-data: {"type": "text", "text": "交叉"}
-
-data: {"type": "text", "text": "融合"}
-
-data: {"type": "text", "text": "的创新"}
-
-data: {"type": "text", "text": "路径"}
-
-data: {"type": "text", "text": "(["}
-
-data: {"type": "text", "text": "暴露"}
-
-data: {"type": "text", "text": "生态"}
-
-data: {"type": "text", "text": "学"}
-
-data: {"type": "text", "text": "理论"}
-
-data: {"type": "text", "text": "框架"}
-
-data: {"type": "text", "text": "]["}
-
-data: {"type": "text", "text": "42"}
-
-data: {"type": "text", "text": "])"}
-
-data: {"type": "artifact", "text": "基于检索结果，我现在生成关于城市绿地对居民心理健康影响的综述大纲：\n\n# 城市绿地对居民心理健康的积极影响：机制、量化与规划策略\n\n## 摘要\n- 背景：城市化加速导致心理健康问题凸显，城市绿地作为重要干预手段\n- 目的：系统综述绿地影响心理健康的机制、量化评估方法及规划策略\n- 方法：基于多学科文献的系统检索与证据整合\n- 主要发现：绿地通过多重机制改善心理健康，存在剂量-效应关系，规划策略需考虑公平性\n- 结论与展望：需建立标准化评估体系，推动基于证据的绿地规划\n- 关键词：城市绿地；心理健康；机制研究；量化评估；规划策略；环境公平\n\n## 1. 引言([刘红晓][3]),([余兆武][13])\n### 1.1 城市化进程与心理健康挑战的现状([你生活的地方绿树多吗][5])\n### 1.2 城市绿地作为心理健康干预手段的理论基础([城市绿地对公共健康的影响机制研究][10])\n### 1.3 研究目标与综述框架([斯坦福领衔全球荟萃研究][11])\n\n## 2. 心理健康的理论基础与评估指标([单靠城市绿色空间是不够的][4])\n### 2.1 心理健康的多维度概念框架([Kessler 6心理困扰量表][4])\n### 2.2 绿地影响心理健康的理论机制：注意力恢复与压力减少([测试城市绿色环境对缓解压力的影响][26])\n### 2.3 量化评估方法与指标体系([城市光环境对情绪影响的多模态研究][17])\n\n## 3. 绿地暴露的心理健康效益机制([绿地自然暴露与自然联结度][6])\n### 3.1 生理机制：皮质醇水平降低与自主神经调节([测试城市绿色环境对缓解压力的影响][26])\n### 3.2 心理机制：注意力恢复与情绪调节([情绪的色彩疗愈][27])\n### 3.3 社会机制：促进社会交往与社区凝聚力([城市蓝绿空间对老年心理健康影响机制][9])\n\n## 4. 剂量-效应关系与暴露阈值研究([余兆武][13]),([绿地有益健康][13])\n### 4.1 暴露时间与心理健康效益的量化关系([量化绿地暴露生理健康效益的阈值效应][39])\n### 4.2 不同类型绿地的效益差异比较([城市公园和城市林地][26])\n### 4.3 最优暴露剂量与效率阈值模型([暴露生态学理论框架][42])\n\n## 5. 不同人群的差异化影响([城市蓝绿空间对老年心理健康影响机制][9])\n### 5.1 老年人群的特殊需求与效益([城市蓝绿空间对老年心理健康影响机制][9])\n### 5.2 学生群体的压力缓解与学习效能([育见绿光：以植物为师][21])\n### 5.3 职业人群的工作压力恢复([快节奏的生活和高强度的工作][8])\n\n## 6. 多感官体验的综合影响([城市绿地梅花听嗅刺激][8])\n### 6.1 视觉绿化的情绪调节作用([凝视绿色场景10分钟][23])\n### 6.2 听觉自然声音的压力缓解效果([城市绿地梅花听嗅刺激][8])\n### 6.3 嗅觉植物芳香的情绪改善机制([城市绿地梅花听嗅刺激][8])\n\n## 7. 量化评估方法与技术进展([城市光环境对情绪影响的多模态研究][17])\n### 7.1 生理指标监测技术的应用([可穿戴生理传感器技术][17])\n### 7.2 心理量表与行为观察的结合([面部表情与自我报告][17])\n### 7.3 地理信息系统在空间分析中的应用([SolVES模型][38])\n\n## 8. 规划策略与设计实践([将用户的适应行为纳入城市绿地规划][14])\n### 8.1 基于心理健康效益的绿地布局优化([居住区内的小微绿地][12])\n### 8.2 多功能绿地空间的设计原则([集低碳环保知识宣导、情绪压力舒缓调节][24])\n### 8.3 社区级绿地的可达性与使用效率([居住区绿地作为城市居民接触频率较高的类型][12])\n\n## 9. 环境公平与社会正义考量([评估城市绿地不平等以促进分配公正][15])\n### 9.1 绿地分布的空间不平等问题([评估城市绿地不平等][15])\n### 9.2 弱势群体的绿地可达性差异([环境不公平][33])\n### 9.3 促进公平的规划干预策略([优化生态补偿以缓解环境不公平][33])\n\n## 10. 生态系统服务价值评估([评估生态系统服务的社会价值][36])\n### 10.1 心理健康效益的经济价值量化([生态系统服务价值评估][35])\n### 10.2 社会文化价值的综合评价方法([SolVES模型的社会价值评估][38])\n### 10.3 成本效益分析与政策支持([为什么要开展生态系统服务价值评估][32])\n\n## 11. 研究挑战与未来方向([暴露生态学：景观生态学在健康维度的范式革新][42])\n### 11.1 方法学标准化与证据质量提升([我国城市的相关证据仍较少][3])\n### 11.2 长期效应与因果机制的深入探索([基于准自然实验方法的因果机制研究][1])\n### 11.3 多学科交叉融合的创新路径([暴露生态学理论框架][42])"}
-
-data: {"type": "metadata", "metadata": {"author": "outline_agent", "references": {"2aaa7dd85d5aaf89": {"idx_val": 1, "file_id": "2aaa7dd85d5aaf89", "title": "国家科技期刊平台基于准自然实验方法的城市绿道暴露与居民心理健康的因果机制研究", "publish_time": "", "snippet": "基于准自然实验方法的城市绿道暴露与居民心理健康的因果机制研究OA北大核心CHSSCDCSTPCD 【目的】城市绿色空间是影响居民心理健康的重要因素,城市绿道建设已被认为是有效的绿色空间干预措施之一,探究城市绿道与居民心理健康的因果机制,对于优化绿色空间规划布局、提升居民心理健康水平具有重要的理论意义。【方法】运用准自然…", "url": "https://opaj.napstic.cn/periodicalArticle/0120240502050087"}, "291f5798216c7dbc": {"idx_val": 2, "file_id": "291f5798216c7dbc", "title": "拔尖计划成果展示-马凯-2021级（发布时间：2025-02-28 22:33:17）", "publish_time": "2025-02-28", "snippet": "我院2021级人文地理与城乡规划（国土空间规划方向）专业本科生马凯同学以第一作者在《Environmental Research》上发表拔尖计划研究成果文章 “Perceived biodiversity of public greenspace and mental well-being”。 城市绿地作为重要的生态基…", "url": "https://www.bing.com/search?q=拔尖计划成果展示-马凯-2021级（发布时间：2025-02-28 22:33:17）"}, "a6afb6070c3c0cea": {"idx_val": 3, "file_id": "a6afb6070c3c0cea", "title": "华南植物园城市绿地心理健康效益评估研究获进展—论文—科学网（发布时间：2021-06-09 12:26:00）", "publish_time": "2021-06-09", "snippet": "作者：刘红晓等 来源：《清洁生产杂志》 发布时间：2021/6/9 12:26:35 目前，我国有11%-15%的人口存在轻到中度的心理问题，2%-3%的人口存在中到重度的心理健康问题。城市中湿地、绿地等自然空间可以改善居民的心理健康，但我国城市的相关证据仍较少。 中国科学院华南植物园生态中心刘红晓在2018年和202…", "url": "https://news.sciencenet.cn/htmlpaper/2021/6/20216912263125264103.shtm"}, "77fde12ab971be76": {"idx_val": 4, "file_id": "77fde12ab971be76", "title": "单靠城市绿色空间是不够的：一项将芝加哥城市绿色空间分布与心理健康连接在一起的景观分析", "publish_time": "", "snippet": "“阅读笔记”研究使用的心理数据由芝加哥公共卫生部在2015年至2017年进行的健康调查（HCS）提供。景观数据来自芝加哥市的高分辨率土地覆盖（HRLC）数据。研究将树冠、草/灌木和水作为城市绿地的独立类别。3.1结果变量心理困扰：研究使用Kessler 6心理困扰量表对受访者的心理困扰进行评分。其中得分范围从0（无心理…", "url": "http://mp.weixin.qq.com/s?__biz=MzI5OTQxMTI0OA==&mid=2247489780&idx=1&sn=8f68cd11ece88d3482f157fedd507aed"}, "3f304cab3b83745f": {"idx_val": 5, "file_id": "3f304cab3b83745f", "title": "你生活的地方绿树多吗？研究表明，这样的环境有益健康！（发布时间：2020-09-26 00:00:00）", "publish_time": "2020-09-26", "snippet": "日益加速的城市化进程对心理健康和生物多样性都是一种威胁。预计到2030年，全球城市覆盖面积将增加到190万平方公里，52亿人将生活在城市地区。抑郁症，特别是在城市地区，患病的人数明显上升。除其他因素外，心理健康程度也会受到生活环境类型的影响。以前的研究表明，城市绿地对心理健康不佳的人有积极的好处，但这些研究大多使用自我…", "url": "http://news.bioon.com/article/6783469.html"}, "c6b13b3b8d67a432": {"idx_val": 6, "file_id": "c6b13b3b8d67a432", "title": "绿地自然暴露与自然联结度对心理健康影响获揭示—新闻—科学网（发布时间：2022-04-14 12:36:00）", "publish_time": "2022-04-14", "snippet": "作者：朱汉斌 刘红晓 来源：中国科学报 发布时间：2022/4/14 12:36:39 中国科学院华南植物园生态中心研究人员揭示了绿地自然暴露与自然联结度对心理健康的影响。相关研究近日发表于《景观与城市规划》。 我国成人各类神经障碍终身患病率高达16.6%，心理健康疾病产生的负担在全部疾病负担中排第二，加强促进心理健康…", "url": "https://news.sciencenet.cn/htmlnews/2022/4/477051.shtm"}, "c76faa65d8a5a3cc": {"idx_val": 7, "file_id": "c76faa65d8a5a3cc", "title": "新研究表明，住在绿色空间附近可以降低抑郁症和焦虑症的患病风险（发布时间：2024-04-24 15:11:07）", "publish_time": "2024-04-24", "snippet": "近年来，随着人口大规模迁往城市，乡村地区无论规模还是人口数量均急剧缩减。城市中公园和其他绿地常被视为提升居民福祉的宝贵资源，但迄今为止，关于这些绿色空间对心理健康影响的深入研究却寥寥无几。 中国华中科技大学的研究人员近期开展了一项探索性研究，旨在揭示长期居住在接近绿色空间环境中与抑郁症和焦虑症——两大心理疾病——之间的…", "url": "https://baijiahao.baidu.com/s?id=1797199146396075021"}, "0ebdb1b323853641": {"idx_val": 8, "file_id": "0ebdb1b323853641", "title": "城市绿地梅花听嗅刺激对人体情绪及压力恢复研究（发布时间：2024-03-18 09:07:00）", "publish_time": "2024-03-18", "snippet": "王一凡 金荷仙 周艳慧 张林浩 陆 磊 随着城市建设向着高密度发展，城市绿地空间不断被压缩，经历了重大健康卫生事件后，公众健康更是成为重点关注对象。快节奏的生活和高强度的工作给城市居民带来了越来越多的压力[1-2]。《2022年中国国民心理健康报告》蓝皮书指出，国民心理健康问题凸显，其中，作为社会重点关注的学生群体，面…", "url": "https://www.fx361.cc/page/2024/0318/23742077.shtml"}, "06379bab05d9ec3a": {"idx_val": 9, "file_id": "06379bab05d9ec3a", "title": "城市蓝绿空间对老年心理健康影响机制的3个结果（发布时间：2023-09-30 16:15:00）", "publish_time": "2023-09-30", "snippet": "核心提示：城市蓝绿空间对老年心理健康影响机制的探究与检验_ 结果与讨论 笔者基于现有理论和研究基础提出了蓝绿空间对老年心理健康作用的研究框架。利用多源数据，通过分层线性模型和多层结构方程模型比较了不同测度方式下蓝绿空间的作用差异，并通过活动能力、环境感知和社会凝聚的中介效应分析造成差异的内在原因和干预路径，同时在空间多…", "url": "https://www.penjing8.com/yuanlin/1/2025.html"}, "31027fbc91fc54d3": {"idx_val": 10, "file_id": "31027fbc91fc54d3", "title": "城市绿地对公共健康的影响机制研究——近20年国外期刊的分析", "publish_time": "", "snippet": "摘要： 城市绿地在促进人的健康方面有重要作用.基于Web of Science数据库,通过CiteSpace与HistCite工具,对国外近20年与城市绿地和公共健康相关的文献进行分析,提出了基于\"访问频次\"的绿地对公共健康的影响机制框架.主要分析了绿地是如何作用于公众心理,生理,身体健康及公共交往的.发现:①国外对促…", "url": "http://xueshu.baidu.com/usercenter/paper/show?paperid=1m1x0pk02b5c0pc02x330e701u524859"}, "6adfd0ade09d9333": {"idx_val": 11, "file_id": "6adfd0ade09d9333", "title": "斯坦福领衔全球荟萃研究揭示：城市自然可显著改善心理健康！（发布时间：2025-07-31 00:00:00）", "publish_time": "2025-07-31", "snippet": "在高楼林立的都市里，你是否曾 因在公园的一次漫步、一场湖畔静坐，而感到内心的平静与愉悦？这并非偶然。来自斯坦福大学自然资本项目（Natural Capital Project）的最新研究，用全球最大规模的实证证据，量化了城市自然对心理健康的积极影响。 近日，斯坦福大学自然资本项目（Natural Capital Pro…", "url": "https://www.bing.com/search?q=斯坦福领衔全球荟萃研究揭示：城市自然可显著改善心理健康！（发布时间：2025-07-31 00:00:00）"}, "925d990cf5e7026b": {"idx_val": 12, "file_id": "925d990cf5e7026b", "title": "居住区内的小微绿地能为疫情下的人们带来怎样的改变？（发布时间：2021-09-01 07:40:00）", "publish_time": "2021-09-01", "snippet": "原标题：居住区内的小微绿地能为疫情下的人们带来怎样的改变？   导 读  居住区绿地作为城市居民接触频率较高的城市绿地类型之一，对居民的心理健康具有积极作用。为了解居住区绿地在2020年新冠肺炎（COVID-19）疫情期间对居民心理健康的影响，本研究于2020年3月以中国安徽省合肥市政务文化新区的住户为样本，通过网络问…", "url": "https://www.sohu.com/a/486978995_121124736"}, "c7750c3b24080583": {"idx_val": 13, "file_id": "c7750c3b24080583", "title": "绿地有益健康，“剂量”大有讲究（发布时间：2024-02-01 07:50:10）", "publish_time": "2024-02-01", "snippet": "■本报记者 张双虎 研究表明，绿地暴露（接触）对人的生理和心理健康均有益处，但绿地暴露到底能带来哪些好处？暴露多久才对健康有益？如何在有限时间内实现绿地健康效益最大化？这些问题人们并不清楚。 为此，复旦大学环境科学与工程系研究员余兆武团队在大量实验基础上，提出“暴露生态学”理论框架，系统理解生态暴露对健康的影响，并设计…", "url": "https://finance.sina.com.cn/tech/roll/2024-02-01/doc-inafnqvk0916957.shtml"}, "cd02c15b1d29c300": {"idx_val": 14, "file_id": "cd02c15b1d29c300", "title": "将用户的适应行为纳入城市绿地规划（发布时间：2022-12-06 17:47:13）", "publish_time": "2022-12-06", "snippet": "新加坡国立大学的生态学家开发了一个估值框架，该框架结合了用户对绿色城市空间的需求，以评估其生态系统服务(ES)提供的效益。 城市绿地贡献了多种与人类福祉和心理健康相关的ES，如空气净化、降噪、降温和娱乐等。ES的值通常呈现为静态“快照”映射，捕获给定时间范围内的参数。然而，静态地图对城市规划的价值有限，因为ES值也由此…", "url": "https://www.omsurg.com/life/202212/3264.html"}, "a79280b5ea86a2f9": {"idx_val": 15, "file_id": "a79280b5ea86a2f9", "title": "MDPI Land：评估城市绿地不平等以促进俄勒冈州波特兰市的分配公正（发布时间：2025-04-18 15:00:35）", "publish_time": "2025-04-18", "snippet": "点击左上角“MDPI环境与地球科学”关注我们，为您推送更多最新资讯。 “ 文章导读 城市地区目前容纳了全球大部分人口，预计到 2050 年前，城市地区与全球人口的比例将继续增加。深入理解城市景观对人类健康的影响，对制定有效的公共政策和土地利用规划至关重要。研究显示，城市环境与多项重大公共卫生问题存在关联，包括大气污染物…", "url": "https://www.bing.com/search?q=MDPI Land：评估城市绿地不平等以促进俄勒冈州波特兰市的分配公正（发布时间：2025-04-18 15:00:35）"}, "35bf27f00d9bc92a": {"idx_val": 16, "file_id": "35bf27f00d9bc92a", "title": "[转载]《中国科学报》发表UEEE LAB最新研究：关注“上游”健康，“剂量”大有讲究（发布时间：2024-01-31 21:12:51）", "publish_time": "2024-01-31", "snippet": "研究表明，绿地暴露（接触）对人的生理和心理健康均有益处，但绿地暴露能带来哪些好处？绿地暴露多久对健康有益？以及如何在有限时间内最大化绿地健康效益等问题人们并不清楚。为此，复旦大学环境科学与工程系研究员余兆武团队在大量实验基础上，提出“暴露生态学”理论框架来系统理解生态暴露对健康的影响，并设计出定量绿地暴露生理健康效率阈…", "url": "https://zhuanlan.zhihu.com/p/680824343"}, "eeb0382888f60179": {"idx_val": 17, "file_id": "eeb0382888f60179", "title": "城市光环境对情绪影响的多模态研究-化工仪器网-手机版（发布时间：2024-12-19 17:23:00）", "publish_time": "2024-12-19", "snippet": "城市光环境以及其对人的心理和生理的影响如何，是城市规划、建筑设计以及环境心理学等诸多学科共同讨论的课题，但如何科学地量化评估却较为困难。 随着近几年神经生物学及可穿戴生理传感器技术的成熟化，对实验室研究光环境的身心体验提供了理论基础和技术支持。来自同济大学的研究团队就基于可穿戴设备获取生理反馈数据，结合面部表情与自我报…", "url": "https://m.chem17.com/tech_news/detail/3898844.html"}, "63aecf4b90a59d4b": {"idx_val": 18, "file_id": "63aecf4b90a59d4b", "title": "社会调查研究与方法形成性考核一（发布时间：2023-05-04 12:07:45）", "publish_time": "2023-05-04", "snippet": "请结合自己的工作、生活或当前社会关注热点，自定主题，简要地制订一个社会调查方案。城市绿化对居民生活质量的影响调查目的：调查城市绿化对居民生活质量的影响，了解居民对城市绿化的需求和意识，为城市绿化政策提供参考。调查对象：城市居民、园林绿化部门工作人员、城市规划专家。调查内容：城市绿化现状：绿地面积、绿化率、绿化类型等。城…", "url": "https://zhuanlan.zhihu.com/p/626630684"}, "5b667c096f35ba4e": {"idx_val": 19, "file_id": "5b667c096f35ba4e", "title": "生涯规划 向“心”而生                —杜集区心理健康与学校生涯规划融合途径交流会（发布时间：2023-10-30 13:15:43）", "publish_time": "2023-10-30", "snippet": "10月29日，淮北市杜集区教育局组织在淮海绿地21城实验学校召开杜集区心理健康与学校生涯规划融合途径交流会。心理健康与生涯规划融合教育是新时代教育改革的必然趋势，是提升学校人才培养质量的应有之意，也是解决学生身心健康发展问题的实践诉求。北京师范大学教授黄四林、淮北师范大学教授赵小云、副教授王淑燕、安徽省心理卫生协会中小…", "url": "https://zhuanlan.zhihu.com/p/664071594"}, "594cf8a525eeaad5": {"idx_val": 20, "file_id": "594cf8a525eeaad5", "title": "当绿色生活遇见心灵疗愈（发布时间：2025-04-22 09:05:13）", "publish_time": "2025-04-22", "snippet": "世界地球日特辑 当绿色生活遇见心灵疗愈 为什么说「绿色」是最好的心灵解药？ 4月22日是第56个世界地球日，今年的主题是“珍爱地球，人与自然和谐共生”。当我们谈论“绿色生活”时，不仅是在守护蓝色星球，更是在为自己的心灵打造一片「治愈绿洲」。科学研究早已发现：自然与心理健康之间，藏着千丝万缕的联系。 #01 绿色生活，给…", "url": "https://www.bing.com/search?q=当绿色生活遇见心灵疗愈（发布时间：2025-04-22 09:05:13）"}, "6a0656cd84c68d84": {"idx_val": 21, "file_id": "6a0656cd84c68d84", "title": "【潜山路校区•向阳班级】育见绿光：以植物为师，伴九年级学子向阳而行（发布时间：2025-09-10 20:11:20）", "publish_time": "2025-09-10", "snippet": "以植物为师 伴九年级学子向阳而行 潜山路校区 近日，合肥市五十中学天鹅湖教育集团潜山路校区九（6）班巧妙利用教室走廊空间，打造了一处名为“绿意心灵驿站”的植物角休闲区。这一举措不仅丰富了班级文化内涵，更成为九年级学子在紧张学习中缓解压力、调节情绪的一方静土。 为应对初三阶段的学业压力与情绪波动，班主任许老师与班委共同发…", "url": "https://www.bing.com/search?q=【潜山路校区•向阳班级】育见绿光：以植物为师，伴九年级学子向阳而行（发布时间：2025-09-10 20:11:20）"}, "2bdf323b82eadcce": {"idx_val": 22, "file_id": "2bdf323b82eadcce", "title": "什么颜色的装饰有助于调节烦躁紧张的心情", "publish_time": "", "snippet": "楼主你好！蓝色和绿色是大自然赋予人类的最佳心理镇静剂,脑电波对红色的反应是警觉，对蓝色是放松，人都有这样的体会，当心情烦躁不安时，到公园或海边看看，心情会很快恢复平静，这正是蓝色和绿色对心理调节的结果。这些色调还有帮助降低皮肤温度、减少脉搏次数、降低血压、减轻心脏负担等作用。 当工作了一天的你感觉身心疲惫、压力重重、精…", "url": "https://wenwen.sogou.com/z/q529222176.htm"}, "ce3c1f4a9778f895": {"idx_val": 23, "file_id": "ce3c1f4a9778f895", "title": "成本极低！在鲤城，这个方法快速改善情绪！（发布时间：2025-04-08 12:06:45）", "publish_time": "2025-04-08", "snippet": "你是否为了护眼 将电子屏幕调成护眼模式？ 将文档调成绿色背景？ 将绿色图片设为屏保？ 那不如—— 把视线移开屏幕 走进古城的春天 来看看树吧！ 近年来 鲤城持续扩大城市绿色空间 提升城市绿化质量 2024年 全区新增改造绿地超过5公顷 走进春日古城 随处可见生机盎然，嫩芽新绿 实验表明，凝视绿色场景10分钟 能够让皮质…", "url": "https://news.qq.com/rain/a/20250408A04EP800"}, "4bcd39a013ec0e37": {"idx_val": 24, "file_id": "4bcd39a013ec0e37", "title": "小榄这个“绿色打卡点” 你来过吗？", "publish_time": "", "snippet": "是一个集低碳环保知识宣导、情绪压力舒缓调节、应急救援知识学习为一体的自助式社区口袋公园。园区内通过多功能智能分类设备让群众体验式学习低碳环保、垃圾分类知识；同时以宣传、科普心理健康知识为核心，借助运用环境心理学相关理论知识，为群众提供一个调节、放空情绪的空间；借助应急救援教具，让群众学习生命健康安全教育知识，把“爱护环…", "url": "http://mp.weixin.qq.com/s?__biz=MjM5MjA1MDYxMA==&mid=2652150042&idx=3&sn=409dbc61c435e7c1454b46f93e86c7e6"}, "66b11aeae67ae5de": {"idx_val": 25, "file_id": "66b11aeae67ae5de", "title": "孕妇对虚拟绿色空间的生理与情感反应", "publish_time": "", "snippet": "研究背景<<<<Research Background>>>>   亲生物假说；注意力恢复理论；压力恢复理论。降低全因死亡率、心血管疾病、2型糖尿病的风险，改善妊娠结局，例如降低低出生体重和早产的风险，以及改善心理健康。暴露于自然环境与手术恢复、生产力、认知和情感改善和减压。虚拟环境刺激方法：先前的研究发现，与沉浸在真…", "url": "http://mp.weixin.qq.com/s?__biz=MzU4MDI4OTE0MQ==&mid=2247496918&idx=1&sn=170c27d71444f8532bdf1c56e993fb61"}, "69691472ebc7dfc4": {"idx_val": 26, "file_id": "69691472ebc7dfc4", "title": "测试城市绿色环境对缓解压力的影响:野外试验", "publish_time": "", "snippet": "原文题目：原文作者：期刊名期刊月份：2014年6月DOI：本研究调查了短期访问城市自然环境的心理(知觉恢复性、主观活力、情绪、创造力)和生理(唾液皮质醇浓度)效应。77名参与者参观了三种不同类型的城市地区;一个建成的城市中心(作为控制环境)，一个城市公园和城市林地，都位于芬兰首都赫尔辛基。研究结果表明，大型城市公园和大…", "url": "http://mp.weixin.qq.com/s?__biz=Mzg5ODYwNDczMQ==&mid=2247484351&idx=1&sn=bd4d9b9a75e6cf9b89a35e4d1c9efc1a"}, "a40dd20488e826dc": {"idx_val": 27, "file_id": "a40dd20488e826dc", "title": "情绪的色彩疗愈（发布时间：2023-06-26 16:43:39）", "publish_time": "2023-06-26", "snippet": "情绪一：紧张、压力大、疲惫推荐色彩：蓝色、绿色忌讳色彩：红色科学家们通过人么脑电波随颜色视觉而有所变化的实验发现，脑电波对红色的反应是警觉，对蓝色是放松。蓝色和绿色是大自然赋予人类的最佳心理镇静剂。人都有这样的体会，当心情烦躁不安时，到公园或海边看看，心情会很快恢复平静，这正是蓝色和绿色对心理调节的结果。这些色调还有帮…", "url": "https://zhuanlan.zhihu.com/p/485893157"}, "cd44bad18eb74b63": {"idx_val": 28, "file_id": "cd44bad18eb74b63", "title": "绿色空间的心理益处取决于一个人的人格特质吗?", "publish_time": "", "snippet": "点击蓝字 关注我们根据注意力恢复理论，大自然会产生恢复性的心理益处，减少压力，恢复注意力疲劳。在一定程度上是因为恢复性环境具有内在的吸引力，这种“魅力”抑制了人们对注意力的争夺。这种心理效益的程度可能在很大程度上取决于个人的人格特质，这种联系在其他研究中也有所表达：“人格特质很重要，因为它们影响个人如何与特定环境互动……", "url": "http://mp.weixin.qq.com/s?__biz=MzU4MDI4OTE0MQ==&mid=2247494543&idx=1&sn=10233dddf4cfc89ab5662448f0a697d0"}, "ec5bdbf5d70a8110": {"idx_val": 29, "file_id": "ec5bdbf5d70a8110", "title": "6谈谈对生态系统服务功能的认识", "publish_time": "", "snippet": "谈谈对生态系统服务功能的认识 生态系统给人类提供了自然资源和生存环境两个方面的多种服务功能，这些服务功能的可持续供给是经济社会可持续发展的基础。生态系统是一个复杂的系统，内部各要素和各种生态系统服务之间都存在复杂的相互作用，当人类选择性的强调某一种生态系统服务时，往往会损害到其他一种或多种服务的提供，导致预期之外的生态…", "url": "https://www.doczj.com/doc/6614903600.html"}, "504a174b366f241d": {"idx_val": 30, "file_id": "504a174b366f241d", "title": "【文献分享ES】将生态恢复项目对生态系统服务和人类福祉影响的认知联系起来，以实现区域可持续性（发布时间：2025-03-29 08:31:01）", "publish_time": "2025-03-29", "snippet": "✦++ 点击蓝字 关注我们 土地科学文献传递 + + + + + + + + + + + 主题：退耕还林工程（Grain for Green Program）、社会生态系统（Social-ecological system）、生态补偿政策（Ecological compensation policy） 文章发表在国际期…", "url": "https://www.bing.com/search?q=【文献分享ES】将生态恢复项目对生态系统服务和人类福祉影响的认知联系起来，以实现区域可持续性（发布时间：2025-03-29 08:31:01）"}, "d6ae71ee2d0bdd0d": {"idx_val": 31, "file_id": "d6ae71ee2d0bdd0d", "title": "【文献分享ES】基于SolVES模型的农村生态系统服务社会值评估——以南京市为例", "publish_time": "", "snippet": "本文发表于国际期刊Forests，2022年第13卷，通讯作者为东南大学建筑学院的徐宁副教授。文章指出，生态系统服务（ES）是指人类为生存和发展直接或间接从生态系统中获得的产品或利益，包括有形的物质资源和无形的精神服务。由于城市化加速了农村生态环境的恶化，影响了农村生态系统服务的社会价值供给，并且利益相关者群体对社会价…", "url": "http://mp.weixin.qq.com/s?__biz=MzU4MTQ5MTM5MA==&mid=2247533959&idx=3&sn=55d5616f0d78c95fe9ec0e2846672a32"}, "66f802eca0b82fda": {"idx_val": 32, "file_id": "66f802eca0b82fda", "title": "为什么要开展生态系统服务价值评估？（发布时间：2021-08-03 20:34:00）", "publish_time": "2021-08-03", "snippet": "生物多样性下降和生态系统服务功能退化，是当今世界面临的主要环境危机之一。 党的十八大提出要把资源消耗、生态效益纳入经济社会发展评价体系，建立体现生态文明要求的目标体系、考核办法、奖惩机制；建立反映市场供求和资源稀缺程度、体现生态价值和代际补偿的资源有偿使用制度和生态补偿制度。党的十九大进一步提出建立市场化、多元化生态补…", "url": "https://m.thepaper.cn/baijiahao_13880610"}, "7b534b0d1d03a2c4": {"idx_val": 33, "file_id": "7b534b0d1d03a2c4", "title": "【SUSTAIN CITIES SOC】如何优化生态补偿以缓解不同城市间的环境不公平？黄河流域生态系统服务供-需-流研究", "publish_time": "", "snippet": "1 文章信息文章题目：How to optimize ecological compensation to alleviate environmental injustice in different cities in the Yellow River Basin? A case of integrating eco…", "url": "http://mp.weixin.qq.com/s?__biz=MzkxMDI2NjMxNQ==&mid=2247527823&idx=5&sn=0dd6d70a9d7377fee817f00ba5d972cb"}, "fcd0f5b325078438": {"idx_val": 34, "file_id": "fcd0f5b325078438", "title": "社会—生态系统综合风险防范的凝聚力模式-期刊-钛学术文献服务平台", "publish_time": "", "snippet": "摘要： 在综合风险防范“凝聚力”概念的基础上,从社会—生态系统综合风险防范的“凝聚力”基本原理、凝聚力形成中的协同效能、凝聚力实现手段、凝聚力优化对提高系统抗打击能力的作用等方面系统研究了“凝聚力”的科学内涵,并初步建立了“凝聚力”的模式,以期完善现有综合风险防范理论体系.结果表明:协同宽容、协同约束、协同放大和协同分…", "url": "https://doc.taixueshu.com/journal/20140032dlxb.html"}, "dc5112cd3aecdf59": {"idx_val": 35, "file_id": "dc5112cd3aecdf59", "title": "生态系统服务价值评估研究进展", "publish_time": "", "snippet": "1. 引言 生态系统为人类提供燃料食物、水源涵养、文化教育等经济、生态、社会服务，是重要的自然资源资产。近年来，由于不合理开发利用、环境污染、生态退化等问题层出不穷，严重影响人类生存。我国政府高度重视自然资源资产和生态环境问题，要求全面评估自然资源资产，编制自然资源资产负债表，加强生态文明建设。党的十九大报告及2018…", "url": "https://www.hanspub.org/journal/PaperInformation?paperID=28003"}, "78747ba4369b21b3": {"idx_val": 36, "file_id": "78747ba4369b21b3", "title": "评估生态系统服务的社会价值（发布时间：2023-05-17 09:59:07）", "publish_time": "2023-05-17", "snippet": "用于评估生态系统服务的社会价值，能够量化美学、生物多样性、休闲生活、文娱活动等生态系统服务功能的社会价值，其评测结果以公众态度和偏好得出，非货币化价值指数表示，具有较高的应用价值。SoLVES模型多应用于景观、公园等生态环境的社会价值评估。      从运用SolVES模型优秀论文推荐→SolVES模型的适用→SolV…", "url": "https://zhuanlan.zhihu.com/p/629504954"}, "4faf1cdf15b0c166": {"idx_val": 37, "file_id": "4faf1cdf15b0c166", "title": "基于InVEST模型的生态系统服务权衡协同关系研究", "publish_time": "", "snippet": "《西北师范大学》 2018年 作者本人免费下载 | 收藏 | 潘翔 开通知网号 【摘要】： 生态系统服务作为连接生态系统和社会系统之间的桥梁。随着人民日益增长的美好生活需要和不平衡不充分的发展之间矛盾的加剧,生态环境日益恶化,导致生态系统服务功能出现了退化,同时引发了区域性甚至全球性的生态环境问题。使得生态系统服务对维…", "url": "https://cdmd.cnki.com.cn/Article/CDMD-10736-1018167776.htm"}, "1dbb5495e1a742d2": {"idx_val": 38, "file_id": "1dbb5495e1a742d2", "title": "【SolVES 模型】生态系统服务功能社会价值评估（基于多源环境QGIS、PostgreSQL、ArcGIS、Maxent、R语言）（发布时间：2023-05-18 16:19:45）", "publish_time": "2023-05-18", "snippet": "SolVES模型（Social Values for Ecosystem Services）全称为生态系统服务社会价值模型，是由美国地质勘探局和美国科罗拉多州立大学联合开发的一款地理信息系统应用程序，开发该模型的目的主要是对生态系统服务功能中的社会价值进行空间分析和量化评估。此模型评估的社会价值类型多种多样，比如：美学…", "url": "https://zhuanlan.zhihu.com/p/630224443"}, "2b05735c978e5273": {"idx_val": 39, "file_id": "2b05735c978e5273", "title": "量化绿地暴露生理健康效益的阈值效应（发布时间：2023-10-08 15:28:52）", "publish_time": "2023-10-08", "snippet": "近期，复旦大学余兆武团队在国际专业领域顶级期刊Landscape and Urban Planning发表论文提出了定量绿地暴露生理健康效率阈值与效益阈值的模型与方法。本研究可以为定量绿地暴露生理健康效应提供重要基础。也是暴露生态学理论框架下绿地暴露研究的重要理论基础。摘要尽管相关研究证实绿地暴露与生理健康效益之间存在…", "url": "https://zhuanlan.zhihu.com/p/659934206"}, "4fee1d44a2da133c": {"idx_val": 40, "file_id": "4fee1d44a2da133c", "title": "暴露量-效应关系的这几点不可不知（发布时间：2021-11-07 19:56:43）", "publish_time": "2021-11-07", "snippet": "文章来源：linklab微信公众号 新药临床试验涉及到临床药理学研究、剂量探索性临床治疗试验和确证性临床治疗试验，其中暴露量-效应关系研究是关键。小编今天将为大家梳理一下新药临床试验中暴露量-效应关系研究的内容，希望能在审评、提高临床研究质量、降低临床失败风险等方面帮助到大家。 暴露量-效应关系研究为什么受到学术界和监…", "url": "https://www.laitimes.com/zh/article/sj7f_t4qb.html"}, "7e23348fa0a4dc4b": {"idx_val": 41, "file_id": "7e23348fa0a4dc4b", "title": "药物暴露-效应关系研究技术指导原则发布（发布时间：2025-08-04 14:44:00）", "publish_time": "2025-08-04", "snippet": "滚动播报  08.04 14:44 （来源：中国食品药品网） 中国食品药品网讯（记者落楠） 7月30日，国家药监局药品审评中心发布《药物暴露-效应关系研究技术指导原则》（以下简称《指导原则》）。 药物暴露-效应关系研究旨在评估药物在不同剂量下的暴露量和效应之间的定量关系。暴露-效应关系是支持新药有效性和安全性评估的核心…", "url": "https://finance.sina.cn/2025-08-04/detail-infiuyua8719498.d.html?oid=3795041581940587&vt=4&cid=76524&node_id=76524"}, "2cecf76b8e68dc6b": {"idx_val": 42, "file_id": "2cecf76b8e68dc6b", "title": "暴露生态学：景观生态学在健康维度的范式革新（发布时间：2025-08-31 22:53:02）", "publish_time": "2025-08-31", "snippet": "字数：8002 阅读时间：23分钟 论文信息 标题：暴露生态学：景观生态学在健康维度的范式革新 时间：2026.1 作者：余兆武，马维源，杨高原 关键词：暴露生态学；景观生态学；生态健康；范式革新；上游健康干预 导读：复旦大学环境系余兆武研究员发表理论综述论文，提出“暴露生态学”这一景观生态学在健康维度的全新范式。该研…", "url": "https://www.ebiotrade.com/newsf/2025-8/20250806083250577.htm"}, "8d20a197d6208c51": {"idx_val": 43, "file_id": "8d20a197d6208c51", "title": "一种建立Hormesis剂量-效应拟合模型的方法", "publish_time": "", "snippet": "专利名称：一种建立Hormesis剂量-效应拟合模型的方法  技术领域：本发明属于环境污染检测技术领域，涉及一种建立Hormesis剂量-效应拟合模型即Bilogistic模型的方法。  背景技术：在环境领域，传统毒理学研究重心在毒物的高剂量区域，其主要目的是评估毒物的毒性大小并确定对人类安全的剂量阈值。因此，传统的生…", "url": "https://www.xjishu.com/zhuanli/02/201210476949.html"}, "cd2f939dffae1c1e": {"idx_val": 44, "file_id": "cd2f939dffae1c1e", "title": "《暴露科学》了解一下！（发布时间：2020-11-08 06:00:41）", "publish_time": "2020-11-08", "snippet": "《暴露科学》序 暴露科学是研究人与化学性、物理性、生物性污染物的接触方式和特征的有关理论和方法的学科，包括暴露浓度的测量方法、人群暴露行为模式、暴露剂量评价模型等内容。 暴露科学是环境健康科学的组成部分，是公共卫生的重要基石。最早的暴露评价可以追溯到19世纪职业安全领域的应用，20世纪七八十年代，随着人们对环境污染问题…", "url": "https://new.qq.com/rain/a/20201108A00U0700"}, "5b189b5cfa3d5307": {"idx_val": 45, "file_id": "5b189b5cfa3d5307", "title": "<br>暴露于镉和铬的 cymbopogon nardus 中光合作用和氧化还原改变的剂量依赖性抑制：通过 RUBISCO 活性的证据。,International Journal of Phytoremediation", "publish_time": "", "snippet": "当前位置： X-MOL 学术 › Int. J. Phytoremediat. › 论文详情 Our official English website, www.x-mol.net, welcomes your feedback! (Note: you will need to create a separate ac…", "url": "https://www.x-mol.com/paper/1907855785425350656/t"}, "89db8e3405bc8dfb": {"idx_val": 46, "file_id": "89db8e3405bc8dfb", "title": "毒作用阈值和剂量", "publish_time": "", "snippet": "收藏 | 投稿 | 周宗灿 【摘要】： <正>毒理学中阈值的概念在危险评定的剂量-反应研究中有重要的意义。近年来提出了非癌终点和癌终点统一的剂量-反应关系的概念模型,有助于健康危险评定的发展。1生物学阈值指某一剂量或暴露浓度,低于此剂量或暴露浓度时所指定的生物学效应不发生。阈值是不引起生物效应的最高剂量和引起生物效应的…", "url": "https://www.cnki.com.cn/Article/CJFDTotal-WSDL201306002.htm"}}}}
-
-data: {"type": "final", "text": "对话结束"}
+data: {"type": "final", "text": "对话结束", "author": "system"}
 

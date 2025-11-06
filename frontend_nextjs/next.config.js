@@ -19,6 +19,7 @@ const withNextIntl = createNextIntlPlugin('./src/i18n.ts');
 // is still evolving and may not yet be fully stable for production environments.
 
 const config = {
+  reactStrictMode: false,
   eslint: {
     ignoreDuringBuilds: true,
   },

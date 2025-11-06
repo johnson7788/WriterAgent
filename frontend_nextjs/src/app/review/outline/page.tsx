@@ -45,13 +45,30 @@ export default function OutlinePage() {
     return () => clearInterval(intervalId);
   }, [appendOutlineContent]);
 
+  const hasInitializedRef = useRef(false);
+  const abortControllerRef = useRef<AbortController | null>(null);
+
   useEffect(() => {
     if (!topic) {
       router.replace("/review/topic");
       return;
     }
 
+    // 防止重复初始化
+    if (hasInitializedRef.current) {
+      return;
+    }
+    hasInitializedRef.current = true;
+
+    // 取消之前的请求（如果存在）
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
     let isMounted = true;
+    const abortController = new AbortController();
+    abortControllerRef.current = abortController;
+
     const generateOutline = async () => {
       setIsGenerating(true);
       setOutlineContent("");
@@ -62,7 +79,7 @@ export default function OutlinePage() {
       try {
         const stream = generateOutlineStream(topic, language);
         for await (const event of stream) {
-          if (!isMounted) return;
+          if (!isMounted || abortController.signal.aborted) return;
           const event_data = event.data;
           console.log("outline输出的event_data:", event_data);
           console.log("event_data.type:", event_data.type);
@@ -103,9 +120,13 @@ export default function OutlinePage() {
           }
         }
       } catch (e) {
+        if (abortController.signal.aborted) {
+          console.log("Request was aborted");
+          return;
+        }
         console.error("Error generating outline:", e);
       } finally {
-        if (isMounted) {
+        if (isMounted && !abortController.signal.aborted) {
           if (chunkQueue.current.length > 0) {
             const remainingChunk = chunkQueue.current.join("");
             appendOutlineContent(remainingChunk);
@@ -121,8 +142,11 @@ export default function OutlinePage() {
 
     return () => {
       isMounted = false;
+      abortController.abort();
+      hasInitializedRef.current = false;
     };
-  }, [topic, language, appendOutlineContent, router, setOutlineContent]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [topic, language, router]);
 
   const handleConfirmOutline = () => {
     if (!outlineContent.trim() || isConfirming) return;
@@ -134,6 +158,8 @@ export default function OutlinePage() {
     if (isGenerating) {
       return;
     }
+    // 重置初始化标志，允许重新生成
+    hasInitializedRef.current = false;
     setIsGenerating(true);
     setOutlineContent("");
     setReferences({}); // Clear references
@@ -152,12 +178,6 @@ export default function OutlinePage() {
           } else if (event_data.type === "metadata") {
             // Handle references
             setReferences(event_data.metadata.references);
-          } else if (event_data.type === "reference_item") {
-            // Handle references
-            setReferences((prev) => ({
-              ...prev,
-              [event_data.item.file_id]: event_data.item,
-            }));
           } else if (event_data.type === "reference_item") {
             // Handle references
             setReferences((prev) => ({

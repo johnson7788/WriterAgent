@@ -48,11 +48,29 @@ export default function ReportPage() {
     return () => clearInterval(intervalId);
   }, [appendReviewContent]);
 
+  const hasInitializedRef = useRef(false);
+  const abortControllerRef = useRef<AbortController | null>(null);
+
   useEffect(() => {
     if (!topic || !outlineContent) {
       router.replace("/review/topic");
       return;
     }
+
+    // 防止重复初始化
+    if (hasInitializedRef.current) {
+      return;
+    }
+    hasInitializedRef.current = true;
+
+    // 取消之前的请求（如果存在）
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    let isMounted = true;
+    const abortController = new AbortController();
+    abortControllerRef.current = abortController;
 
     const generateReview = async () => {
       setIsGenerating(true);
@@ -62,6 +80,7 @@ export default function ReportPage() {
       try {
         const stream = generateReviewStream(topic, outlineContent);
         for await (const event of stream) {
+          if (!isMounted || abortController.signal.aborted) return;
           const event_data = event.data;
           console.log("report输出的event_data:", event_data);
           console.log("event_data.type:", event_data.type);
@@ -101,14 +120,27 @@ export default function ReportPage() {
           }
         }
       } catch (e) {
+        if (abortController.signal.aborted) {
+          console.log("Request was aborted");
+          return;
+        }
         console.error("Error generating review:", e);
       } finally {
-        setIsGenerating(false);
+        if (isMounted && !abortController.signal.aborted) {
+          setIsGenerating(false);
+        }
       }
     };
 
     void generateReview();
-  }, [topic, outlineContent, router, setReviewContent, appendReviewContent]);
+
+    return () => {
+      isMounted = false;
+      abortController.abort();
+      hasInitializedRef.current = false;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [topic, outlineContent, router]);
 
   const handleDownload = async () => {
     console.log("Downloading content...");
@@ -139,6 +171,8 @@ export default function ReportPage() {
 
 
   const handleRegenerate = () => {
+    // 重置初始化标志，允许重新生成
+    hasInitializedRef.current = false;
     const generateReview = async () => {
       setIsGenerating(true);
       setReviewContent('');
@@ -154,12 +188,6 @@ export default function ReportPage() {
           } else if (event_data.type === "metadata") {
             // Handle references
             setReferences(event_data.metadata.references);
-          } else if (event_data.type === "reference_item") {
-            // Handle references
-            setReferences((prev) => ({
-              ...prev,
-              [event_data.item.file_id]: event_data.item,
-            }));
           } else if (event_data.type === "reference_item") {
             // Handle references
             setReferences((prev) => ({
