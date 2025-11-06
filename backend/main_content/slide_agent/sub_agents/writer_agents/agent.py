@@ -10,7 +10,7 @@ from google.adk.events import Event, EventActions
 from google.adk.agents.invocation_context import InvocationContext
 from google.adk.agents.callback_context import CallbackContext
 from google.adk.models import LlmRequest, LlmResponse
-from .tools import SearchImage, DocumentSearch, AbstractSearch
+from .tools import SearchImage, DocumentSearch
 from .utils import stringify_references
 from ...config import CONTENT_WRITER_AGENT_CONFIG
 from ...create_model import create_model
@@ -93,7 +93,7 @@ class WriterSubAgent(LlmAgent):
             after_agent_callback=my_after_agent_callback,
             before_model_callback=my_before_model_callback,
             after_model_callback=my_after_model_callback,
-            tools=[DocumentSearch, AbstractSearch],
+            tools=[DocumentSearch],
             **kwargs
         )
 
@@ -170,7 +170,7 @@ class ControllerAgent(BaseAgent):
         retry_map = ctx.session.state.get("rewrite_retry_count_map", {})
         idx_mapping = ctx.session.state.get("idx_mapping", {})
 
-        if checker_result is True:
+        if checker_result:
             # ✅ 通过：提交并推进
             sections = ctx.session.state.get("existing_sections", [])
             sections.append(ctx.session.state.get("last_draft", ""))
