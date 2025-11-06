@@ -232,27 +232,26 @@ class FastCheckerAgent(BaseAgent):
         return "\n".join(details)
 
 
-# def fast_checker_before_agent_callback(callback_context: CallbackContext) -> None:
-#     """快速检查器的前置回调"""
-#     start_time = time.time()
-#     callback_context.state["fast_check_start_time"] = start_time
-#     current_part_index = callback_context.state.get("current_part_index", 0)
-#     logger.info(f"=====>>>8. FastCheckerAgent 开始检查第 {current_part_index} 块")
+def fast_checker_before_agent_callback(callback_context: CallbackContext) -> None:
+    """快速检查器的前置回调"""
+    start_time = time.time()
+    callback_context.state["fast_check_start_time"] = start_time
+    current_part_index = callback_context.state.get("current_part_index", 0)
+    logger.info(f"=====>>>8. FastCheckerAgent 开始检查第 {current_part_index} 块")
 
 
-# def fast_checker_after_agent_callback(callback_context: CallbackContext) -> None:
-#     """快速检查器的后置回调"""
-#     start_time = callback_context.state.get("fast_check_start_time", time.time())
-#     cost_time = time.time() - start_time
-#     total_time = callback_context.state.get("fast_check_total_time", 0.0) + cost_time
-#     callback_context.state["fast_check_total_time"] = total_time
-#     current_part_index = callback_context.state.get("current_part_index", 0)
-    
-#     logger.info(f"=====>>>11. FastCheckerAgent 第{current_part_index}块检查完毕, 耗时: {cost_time:.3f} 秒, 总耗时: {total_time:.3f} 秒")
+def fast_checker_after_agent_callback(callback_context: CallbackContext) -> None:
+    """快速检查器的后置回调"""
+    start_time = callback_context.state.get("fast_check_start_time", time.time())
+    cost_time = time.time() - start_time
+    total_time = callback_context.state.get("fast_check_total_time", 0.0) + cost_time
+    callback_context.state["fast_check_total_time"] = total_time
+    current_part_index = callback_context.state.get("current_part_index", 0)
+    logger.info(f"=====>>>11. FastCheckerAgent 第{current_part_index}块检查完毕, 耗时: {cost_time:.3f} 秒, 总耗时: {total_time:.3f} 秒")
 
 
 # 创建快速检查器实例
 fast_checker_agent = FastCheckerAgent(
-    # before_agent_callback=fast_checker_before_agent_callback,
-    # after_agent_callback=fast_checker_after_agent_callback,
+    before_agent_callback=fast_checker_before_agent_callback,
+    after_agent_callback=fast_checker_after_agent_callback,
 )

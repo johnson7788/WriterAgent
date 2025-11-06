@@ -154,90 +154,6 @@ class WriterSubAgent(LlmAgent):
         return prompt_instruction
 
 
-# def checker_get_dynamic_instruction(ctx: InvocationContext) -> str:
-#     """
-#     为CheckerAgent生成动态指令，支持语言参数
-#     """
-#     # 从上下文状态中获取语言参数
-#     language = ctx.state.get("language")
-    
-#     # 获取其他必要的参数
-#     title = ctx.state.get("title", "未知标题")
-#     last_struct = ctx.state.get("last_struct", "{}")
-#     last_draft = ctx.state.get("last_draft", "")
-    
-#     # 使用所有参数格式化CHECKER_AGENT_PROMPT
-#     prompt_instruction = prompt.CHECKER_AGENT_PROMPT.format(
-#         language=language,
-#         title=title,
-#         last_struct=last_struct,
-#         last_draft=last_draft
-#     )
-    
-#     return prompt_instruction
-
-
-
-# class CheckerAgent(LlmAgent):
-#     async def _run_async_impl(self, ctx: InvocationContext) -> AsyncGenerator[Event, None]:
-#         current_part_index: int = ctx.session.state.get("current_part_index", 0)
-#         last_draft = ctx.session.state.get("last_draft")
-#         last_struct = ctx.session.state.get("last_struct")
-#         rewrite_retry_count_map: Dict[int, int] = ctx.session.state.get("rewrite_retry_count_map", {})
-#         idx_mapping = ctx.session.state.get("idx_mapping", {})
-#         if current_part_index == 0:
-#             logger.info(f"=====>>>8. 不检查摘要，直接返回给前端")
-#             ctx.session.state["checker_result"] = True
-#             yield Event(author=self.name, content=types.Content(parts=[types.Part(text=last_draft)]))
-#             return
-#         async for event in super()._run_async_impl(ctx):
-#             logger.info(f"=====>>>9. {self.name} 检查结果事件：{event}")
-#             result = event.content.parts[0].text.strip()
-
-#             if "不合格" in result or "fail" in result.lower():
-#                 retry_count = rewrite_retry_count_map.get(current_part_index, 0)
-#                 if retry_count < 3:
-#                     logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count + 1} 次尝试重写 分块 {current_part_index}")
-#                     ctx.session.state["checker_result"] = False
-#                 else:
-#                     logger.info(f"=====>>>10. [CheckerAgent] 第 {retry_count} 次重写失败，已达最大次数，使用最后一次的draft的数据")
-#                     ctx.session.state["checker_result"] = True
-#                     filter_text, new_mapping= index_filter.process_paragraphs_and_build_mapping(paragraphs=last_draft, prev_mapping=idx_mapping)
-#                     filter_text = idx_sort.sort_citation_numbers_in_text(filter_text)
-#                     ctx.session.state["idx_mapping"] = new_mapping
-#                     yield Event(author=self.name, content=types.Content(parts=[types.Part(text=filter_text)]))
-#             else:
-#                 # 审核通过了，那么返回WriterSubAgent的回答给前端
-#                 ctx.session.state["checker_result"] = True
-#                 filter_text, new_mapping= index_filter.process_paragraphs_and_build_mapping(paragraphs=last_draft, prev_mapping=idx_mapping)
-#                 filter_text = idx_sort.sort_citation_numbers_in_text(filter_text)
-#                 ctx.session.state["idx_mapping"] = new_mapping
-#                 yield Event(author=self.name, content=types.Content(parts=[types.Part(text=filter_text)]))
-
-# def checker_before_model_callback(callback_context: CallbackContext, llm_request: LlmRequest):
-#     start_time = time.time()
-#     callback_context.state["check_start_time"] = start_time
-#     return None
-# def checker_after_model_callback(callback_context: CallbackContext, llm_response: LlmResponse):
-#     start_time = callback_context.state.get("check_start_time")
-#     cost_time = time.time() - start_time
-#     total_time = callback_context.state.get("check_total_time", 0.0) + cost_time
-#     callback_context.state["check_total_time"] = total_time
-#     current_part_index = callback_context.state.get("current_part_index", 0)
-#     agent_name = callback_context.agent_name
-#     logger.info(f"=====>>>11. 调用了{agent_name}.checker_after_model_callback, 第{current_part_index}块检查完毕, 耗时: {cost_time} 秒, 总耗时: {total_time} 秒")
-#     return None
-
-# writer_checker_agent = CheckerAgent(
-#     model=create_model(model=CHECKER_AGENT_CONFIG["model"], provider=CHECKER_AGENT_CONFIG["provider"]),
-#     name="WriterCheckerAgent",
-#     description="检查撰写综述章节的内容是否合格",
-#     instruction=checker_get_dynamic_instruction,
-#     before_model_callback=checker_before_model_callback,
-#     after_model_callback=checker_after_model_callback,
-# )
-
-
 class ControllerAgent(BaseAgent):
     def __init__(self, **kwargs):
         super().__init__(
@@ -334,15 +250,13 @@ def my_super_before_agent_callback(callback_context: CallbackContext):
     return None
 
 # --- 4. WriterGeneratorLoopAgent ---
-# 根据配置选择检查器
-# selected_checker_agent = fast_checker_agent if USE_FAST_CHECKER else writer_checker_agent
-selected_checker_agent = fast_checker_agent
+
 writer_generator_loop_agent = LoopAgent(
     name="WriterGeneratorLoopAgent",
     max_iterations=100,  # 设置一个足够大的最大迭代次数，以防万一。主要依赖ConditionAgent停止。
     sub_agents=[
         WriterSubAgent(),   # 生成草稿 -> state["last_draft"]
-        selected_checker_agent,     # 校验 -> state["checker_result"] (可选择快速或传统检查器)
+        fast_checker_agent,     # 校验 -> state["checker_result"] (可选择快速或传统检查器)
         ControllerAgent(),  # 决策：提交/递增/终止 或 触发重写
     ],
     before_agent_callback=my_super_before_agent_callback,
