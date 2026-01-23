@@ -20,6 +20,11 @@ export type ReviewEventPayload =
       type: 'reference_item';
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       item: any;
+    }
+  | {
+      type: 'data';
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      data: any;
     };
 
 // 我们对外返回给 UI 的事件结构
